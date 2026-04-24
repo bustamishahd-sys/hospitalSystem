@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href=".\src\output.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container mx-auto row justify-between py-4.5 px-8 lg:px-0">
+            <div class="row justify-between gap-8">
+                <a href="./index.html" class="text-xl font-bold text-[var(--color-primary)]">MedPrecise</a>
+                <ul class="row justify-between gap-6 text-sm text-[var(--color-muted)] hidden  md:flex">
+                    <li>
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Doctors</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Clinics</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Book</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="icons">
+                <ul class="row justify-between gap-4">
+                    <li>
+                        <a href="#"><img src="./src/ICONS/search.svg"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./src/ICONS/pro.svg"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./src/ICONS/not.svg"></a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <section class="hero h-[calc(100vh-68px)] px-8 lg:px-0">
+            <div class="row container mx-auto h-full ">
+                 <div class="flex-1">
+                <div class="mb-2">  
+                 <h1 class="text-[var(--color-highlight)] mb-2">TRUSTED HEALTHCARE NETWORK</h1>
+               <h2 class="text-[var(--color-primary)] mb-2 " >Book your appointment with top doctors</h2>
+             <p1 class="text-[var(--color-muted)]">Experience clinical excellence with our network of certified specialists.<br>Schedule consultations, manage medical records, and access world-class<br>
+             healthcare facilities seamlessly.
+             </p1>
+             </div>
+          
+        <div class="mt-6 ">
+            <button class="book cursor-pointer py-4 px-6 rounded-xl  bg-[var(--color-primary)] text-[var(--color-background)] mr-2.5 ">Book Now</button>
+            <button class="find-doctor cursor-pointer py-4 px-6 rounded-xl  bg-[var(--color-bg2)] text-[var(--color-t2)]">Find Doctors</button>
+      </div>
+      </div>
+      <div class="flex-1 hidden md:flex justify-end" >
+     <img src="./src/photos/hero.webp" alt="doctor Image" class="rounded-md">
+     </div> 
+            </div>
+           
+        </section>
+        <section class="medical-dep h-[528px] px-8 lg:px-0 bg-[var(--color-bg3)] flex items-center justify-center ">
+                <div class="container mx-auto">
+               <div class="text-center"> 
+              <h2 class=" title text-[var(--color-primary)]">Medical Departments</h2>
+            </div>
+              <div class="cards grid grid-cols-1 md:grid-cols-3 gap-4 mt-12">
+            <div class="card">
+                <div class="icon"><img src="./src/ICONS/Cardiology.svg " alt="Cardiology Icon">
+                </div>
+                <h3 class="my-1 text-[var(--color-primary)]">Cardiology</h3>
+                <p class="text-[var(--color-muted)]">24 Specialized Doctors</p>
+                </div>
+                <div class="card">
+                    <div class="icon"><img src="./src/ICONS/Pediatrics.svg" alt="Pediaics Icon">
+                </div>
+                <h3 class="my-1 text-[var(--color-primary)]">Pediatrics</h3>
+                <p class="text-[var(--color-muted)]">18 Specialized Doctors</p>
+            </div>
+            <div class="card">
+                <div class="icon"><img src="./src/ICONS/Dermatology.svg" alt="Dermatology Icon">
+                </div>
+                <h3 class="my-1 text-[var(--color-primary)]">Dermatology</h3>
+                <p class="text-[var(--color-muted)]">12 Specialized Doctors</p>
+            </div>    
+              <div class="card">
+              <div class="icon"><img src="./src/ICONS/Neurology.svg" alt="Neurology Icon">
+                </div>
+                <h3 class="my-1 text-[var(--color-primary)]">Neurology</h3>
+                <p class="text-[var(--color-muted)]">15 Specialized Doctors</p>
+              </div>
+                <div class="card">
+               <div class="icon"><img src="./src/ICONS/Psychiatry.svg" alt="Psychiatry Icon">
+                </div>
+                <h3 class="my-1 text-[var(--color-primary)]">Psychiatry</h3>
+                <p class="text-[var(--color-muted)]">10 Specialized Doctors</p>
+                </div>
+              <div class="card">
+                <div class="icon"><img src="./src/ICONS/Ophthalmology.svg" alt="Ophthalmology Icon">
+                </div>
+                <h3 class="my-1 text-[var(--color-primary)]">Ophthalmology</h3>
+                <p class="text-[var(--color-muted)]">9 Specialized Doctors</p> 
+              </div>
+              </div>
+                </div>
+    
+        </section>
+        
+    </main>
+               
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+
+@theme{
+    --color-background:#FAFAF8 ;
+    --color-primary:#2C3E50 ;
+    --color-muted:#6B6B6B ;
+    --color-gr:#4A7C59 ;
+    --color-highlight:#676259 ;
+    --color-text:#43474C ;
+    --color-t2:#1C1C1C ;
+    --color-bg2:#E8E0D5 ;
+    --color-bg3:#F2EFE9;
+    --color-border:#E0DDD7;
+    --font-inter:'Inter';
+}
+@layer base {
+    body{
+        font-family: var(--font-inter);
+    }
+}
+@utility row {
+    @apply flex items-center;
+}
+@utility nav-link {
+    @apply cursor-pointer hover:text-[var(--color-primary)] hover:scale-115 inline-block transition-all duration-200;
+}
+header {
+  border-bottom: 1px solid #E0DDD7;
+}
+h1{
+    font-size: 1 rem;
+    line-height: 1.5 rem;
+}
+h2{
+    font-size: 1 rem;
+    line-height: 1.5 rem;
+}
+.title{
+    position: relative;
+    display: inline-block;
+}
+.title::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #2C3E50;
+    border-radius: 2px;
+    margin: 8px auto 0;
+}
+
+.card{
+    border: 1.5px solid var(--color-border);
+    background-color: var(--color-background);
+    border-radius: 8px;
+    padding: 24px;
+
+}
