@@ -53,8 +53,8 @@
         </div>
     </header>
     <main>
-        <section class="hero h-[calc(100vh-68px)] px-8 lg:px-0">
-            <div class="row container mx-auto h-full ">
+        <section class="hero min-h-[628px] py-8  px-8 lg:px-0 md:py-0  flex items-center justify-center ">
+            <div class="container mx-auto flex-col  md:row md:flex-row h-full">
                  <div class="flex-1">
                 <div class="mb-2">  
                  <h1 class="text-[var(--color-highlight)] mb-2">TRUSTED HEALTHCARE NETWORK</h1>
@@ -69,13 +69,13 @@
             <button class="find-doctor cursor-pointer py-4 px-6 rounded-xl  bg-[var(--color-bg2)] text-[var(--color-t2)]">Find Doctors</button>
       </div>
       </div>
-      <div class="flex-1 hidden md:flex justify-end" >
+      <div class="flex-1 justify-end mt-4 md:mt-0" >
      <img src="./src/photos/hero.webp" alt="doctor Image" class="rounded-md">
      </div> 
             </div>
            
         </section>
-        <section class="medical-dep h-[528px] px-8 lg:px-0 bg-[var(--color-bg3)] flex items-center justify-center ">
+        <section class="medical-dep min-h-[528px] py-8 px-8 lg:px-0 lg:py-0 bg-[var(--color-bg3)] flex items-center justify-center ">
                 <div class="container mx-auto">
                <div class="text-center"> 
               <h2 class=" title text-[var(--color-primary)]">Medical Departments</h2>
@@ -121,14 +121,14 @@
                 </div>
     
         </section>
-        <section class="top-doctors h-[647px] px-8 lg:px-0 flex items-center justify-center">
+        <section class="top-doctors min-h-[647px] py-8 px-8 lg:px-0 lg:py-0 flex items-center justify-center">
             <div class="container mx-auto ">
              <h2 class="text-[var(--color-primary)]">Top Rated Doctors</h2>
              <div class="row justify-between">
                 <p class="text-[var(--color-muted)]">
                     Highly experienced professionals ready to assist you.
                 </p>
-                <a href="#" class="text-[var(--color-primary)] underline cursor-pointer">View All Doctors</a>
+                <a href="#" class="text-[var(--color-primary)] underline cursor-pointer p-2 md:p-0">View All Doctors</a>
              </div>
              <div class="dr-cards mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 <div class="dr-card">
@@ -197,7 +197,7 @@
             </div>
 
         </section>
-        <section class="steps h-[384px] px-8 lg:px-0 bg-[var(--color-primary)] flex items-center justify-center">
+        <section class="steps min-h-[384px] py-8 px-8 lg:px-0 md:py-0 bg-[var(--color-primary)] flex items-center justify-center">
             <div class="container mx-auto">
                 <h2 class="text-[var(--color-background)] text-center">Streamlined Healthcare in 3 Steps</h2>
                 <p class="text-[var(--color-light)] text-center">Booking your health appointment has never been easier.</p>
@@ -219,11 +219,83 @@
                 </div>
 
             </div>
+            </div>
+        </section>
+        <section class="Testimonials py-8 px-8 lg:px-0 lg:py-0 min-h-[418px] flex items-center justify-center">
+            <div class="container mx-auto">
+                <h2 class="text-[var(--color-primary)] mb-12 text-center">What Our Patients Say</h2>
+                <div class="Patients-cards grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="Patient-card ">
+                        <img src="./src/ICONS/5stars.svg" alt="5 Stars Icon">
+                        <p class="my-2 text-[var(--color-primary)]  italic">
+                            "The efficiency of booking throughMedPrecise is unmatched. I found a specialist and had my consultation within 24 hours."
+                        </p>
+                        <h4>— Robert J. Henderson</h4>
 
+                    </div>
+                    <div class="Patient-card">
+                        <img src="./src/ICONS/4stars.svg" alt="4 Stars Icon">
+                        <p class="my-2 text-[var(--color-primary)]  italic">
+                            "Very professional doctors and a clean
+                               interface. The digital medical records
+                               feature is incredibly helpful for follow-ups."
+                        </p>
+                        <h4>— Emily L. Sterling</h4>
+
+                    </div>
+                    <div class="Patient-card">
+                        <img src="./src/ICONS/5stars.svg" alt="5 Stars Icon">
+                        <p class="my-2 text-[var(--color-primary)]  italic">
+                            "The efficiency of booking throughMedPrecise is unmatched. I found a specialist and had my consultation within 24 hours."
+                        </p>
+                        <h4>— Robert J. Henderson</h4>
+
+                    </div>
+                </div>
+            </div>
 
         </section>
     </main>
-               
-    
-</body>
+    <footer class="py-8 px-8 lg:px-0 lg:py-0 min-h-[304px] flex items-center justify-center bg-[var(--color-bg3)] border-t  border-[var(--color-border)]">
+        <div class="footer container mx-auto ] ">
+            <div class="footer-container grid grid-cols-1 md:grid-cols-4 gap-8 ">
+                <div>
+                    <h3 class="font-bold text-lg text-[var(--color-primary)] mb-[16.5px]">MedPrecise</h3>
+                    <p class="text-[var(--color-muted)]">Providing high-end clinical care and reliable healthcare solutions for a healthier tomorrow.</p>
+                </div>
+                <div>
+                    <h5>DEPARTMENTS</h5>
+                    <ul >
+                        <li><a href="#" >Cardiology</a></li>
+                        <li class="my-4"><a href="#" >Pediatrics</a></li>
+                        <li><a href="#">Neurology</a></li>
+                        <li class="mt-4"><a href="#">Dermatology</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>HELP & SUPPORT</h5>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li class="my-4"><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Patient Rights</a></li>
+                        <li class="mt-4"><a href="#">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>CONTACT</h5>
+                    <ul>
+                        <li class="text-[var(--color-muted)]">123 Medical Plaza, Health City</li>
+                        <li class="my-4 text-[var(--color-muted)]">contact@medprecise.com</li>
+                    </ul>
+                    <button>EMERGENCY: 911</button>
+                </div>
+            </div>
+           
+        </div>
+    </footer>
+    <footer class="py-8 px-8 lg:px-0 lg:py-0 min-h-[81px] flex items-center justify-center bg-[var(--color-bg3)] border-t  border-[var(--color-border)] ">
+        <div class="container mx-auto text-center  ">
+             <p class="text-xs text-[var(--color-muted)]">© 2024 MEDPRECISE HEALTH. CLINICAL EXCELLENCE GUARANTEED.</p>
+        </div>
+    </footer>
 </html>

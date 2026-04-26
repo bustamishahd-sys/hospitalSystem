@@ -44,6 +44,18 @@ h3{
     font-size: 1 rem;
     line-height: 1.5 rem;
 }
+h4{
+    font-size: 1 rem;
+    line-height: 1.5 rem;
+    font-weight: bold;
+    color: #2C3E50;
+}
+h5{
+    font-size: 12px;
+    font-weight: bold;
+    color: #6B6B6B;
+    margin-bottom: 16px;
+}
 .status{
     font-size: 10px;
     font-weight: bold;
@@ -109,4 +121,23 @@ width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.Patient-card{
+    background-color: var(--color-bg3);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 24px;
+
+}
+.footer-container a{
+    color: var(--color-muted);
+
+}
+.footer-container button{
+    color: #FFFFFF;
+    background-color: var(--color-primary);
+    font-weight: bold;
+    padding: 12PX 68.86PX;
+    border-radius: 8PX;
+
 }
