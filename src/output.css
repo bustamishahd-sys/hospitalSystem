@@ -27,6 +27,9 @@
     --color-bg2: #E8E0D5;
     --color-bg3: #F2EFE9;
     --color-border: #E0DDD7;
+    --color-available: #4A7C59;
+    --color-unavailable: #4A90E2;
+    --color-light: #96A9BE;
     --font-inter: 'Inter';
   }
 }
@@ -197,11 +200,23 @@
       max-width: 96rem;
     }
   }
+  .m-4 {
+    margin: calc(var(--spacing) * 4);
+  }
+  .mx-4 {
+    margin-inline: calc(var(--spacing) * 4);
+  }
   .mx-auto {
     margin-inline: auto;
   }
   .my-1 {
     margin-block: calc(var(--spacing) * 1);
+  }
+  .my-4 {
+    margin-block: calc(var(--spacing) * 4);
+  }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
   }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
@@ -256,8 +271,14 @@
   .table {
     display: table;
   }
+  .h-\[384px\] {
+    height: 384px;
+  }
   .h-\[528px\] {
     height: 528px;
+  }
+  .h-\[647px\] {
+    height: 647px;
   }
   .h-\[calc\(100vh-68px\)\] {
     height: calc(100vh - 68px);
@@ -280,8 +301,11 @@
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  .grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-row {
+    flex-direction: row;
   }
   .items-center {
     align-items: center;
@@ -295,8 +319,8 @@
   .justify-end {
     justify-content: flex-end;
   }
-  .gap-2 {
-    gap: calc(var(--spacing) * 2);
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
@@ -306,6 +330,9 @@
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
+  }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
   }
   .rounded-md {
     border-radius: var(--radius-md);
@@ -317,6 +344,9 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .bg-\[var\(--color-available\)\] {
+    background-color: var(--color-available);
+  }
   .bg-\[var\(--color-bg2\)\] {
     background-color: var(--color-bg2);
   }
@@ -325,6 +355,9 @@
   }
   .bg-\[var\(--color-primary\)\] {
     background-color: var(--color-primary);
+  }
+  .bg-\[var\(--color-unavailable\)\] {
+    background-color: var(--color-unavailable);
   }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
@@ -359,6 +392,9 @@
   .text-\[var\(--color-highlight\)\] {
     color: var(--color-highlight);
   }
+  .text-\[var\(--color-light\)\] {
+    color: var(--color-light);
+  }
   .text-\[var\(--color-muted\)\] {
     color: var(--color-muted);
   }
@@ -375,14 +411,19 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
-  .sm\:grid-cols-3 {
-    @media (width >= 40rem) {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
+    }
+  }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   .md\:grid-cols-3 {
@@ -390,9 +431,9 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
-  .lg\:grid-cols-3 {
+  .lg\:grid-cols-4 {
     @media (width >= 64rem) {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
   .lg\:px-0 {
@@ -417,6 +458,20 @@ h2 {
   font-size: 1 rem;
   line-height: 1.5 rem;
 }
+h3 {
+  font-size: 1 rem;
+  line-height: 1.5 rem;
+}
+.status {
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 0.938 rem;
+  color: #FFFFFF;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  text-align: center;
+  padding: 4px 8px;
+}
 .title {
   position: relative;
   display: inline-block;
@@ -435,6 +490,41 @@ h2 {
   background-color: var(--color-background);
   border-radius: 8px;
   padding: 24px;
+}
+.dr-card {
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg3);
+  border-radius: 8px;
+  height: 423px;
+  overflow: hidden;
+}
+.dr-card button {
+  background-color: var(--color-bg3);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.dr-card img {
+  width: 100%;
+  object-fit: cover;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  height: 61%;
+}
+.step-number {
+  width: 64px;
+  height: 64px;
+  background-color: #FAFAF8;
+  color: #2C3E50;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @property --tw-duration {
   syntax: "*";
