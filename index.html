@@ -11,7 +11,20 @@
 </head>
 <body>
     <header>
-        <div class="container mx-auto row justify-between py-4.5 px-8  ">
+        <div class="container mx-auto row justify-between py-4.5 px-8 " >
+            <div class="md:hidden">
+                <input type="checkbox" class="hidden peer"  id="menu">
+                <label for="menu" class="cursor-pointer"><img src="./src/ICONS/Menu.svg"/>
+                </label>
+                <div class="hidden peer-checked:flex flex-col bg-[var(--color-bg2)] p-4 gap-2">
+                    <a href="./index.html">Home</a>
+                    <a href="./doctor profile.html">Doctors</a>
+                    <a href="#">Clinics</a>
+                    <a href="#">Book</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                </div>
+            </div>
             <div class="row justify-between gap-8">
                 <a href="./index.html" class="text-xl font-bold text-[var(--color-primary)]">MedPrecise</a>
                 <ul class="row justify-between gap-6 text-sm text-[var(--color-muted)] hidden  md:flex">
@@ -40,10 +53,10 @@
                     <li>
                         <a href="#"><img src="./src/ICONS/search.svg"></a>
                     </li>
-                    <li>
+                    <li class="hidden md:block">
                         <a href="#"><img src="./src/ICONS/pro.svg"></a>
                     </li>
-                    <li>
+                    <li class="hidden md:block">
                         <a href="#"><img src="./src/ICONS/not.svg"></a>
                     </li>
                 </ul>

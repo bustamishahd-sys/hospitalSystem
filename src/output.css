@@ -410,6 +410,15 @@
   .border-\[var\(--color-border\)\] {
     border-color: var(--color-border);
   }
+  .bg-\[va\] {
+    background-color: va;
+  }
+  .bg-\[var\(--colo\)\] {
+    background-color: var(--colo);
+  }
+  .bg-\[var\(--color-\)\] {
+    background-color: var(--color-);
+  }
   .bg-\[var\(--color-available\)\] {
     background-color: var(--color-available);
   }
@@ -433,6 +442,9 @@
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
@@ -567,24 +579,9 @@
     --tw-duration: 75ms;
     transition-duration: 75ms;
   }
-  .hover\:bg-\[var\(--color-\)\]\/80 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-);
-        @supports (color: color-mix(in lab, red, red)) {
-          background-color: color-mix(in oklab, var(--color-) 80%, transparent);
-        }
-      }
-    }
-  }
-  .hover\:bg-\[var\(--color-bg\)\]\/80 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-bg);
-        @supports (color: color-mix(in lab, red, red)) {
-          background-color: color-mix(in oklab, var(--color-bg) 80%, transparent);
-        }
-      }
+  .peer-checked\:flex {
+    &:is(:where(.peer):checked ~ *) {
+      display: flex;
     }
   }
   .hover\:bg-\[var\(--color-bg2\)\]\/80 {
@@ -636,9 +633,19 @@
       margin-top: calc(var(--spacing) * 0);
     }
   }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
+    }
+  }
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
+    }
+  }
+  .md\:hidden {
+    @media (width >= 48rem) {
+      display: none;
     }
   }
   .md\:basis-\[290px\] {
