@@ -38,7 +38,9 @@
     }
 }
 a,button{
-    cursor: pointer; }
+    @apply cursor-pointer transition-all duration-150 active:scale-90;
+
+ }
 
 header {
   border-bottom: 1px solid #E0DDD7;
@@ -115,9 +117,8 @@ h5{
     width: 100%;
     padding: 10px;
     margin-top: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}   
+}  
+
 .dr-card img{
 width: 100%;
   object-fit: cover;
@@ -152,7 +153,9 @@ width: 100%;
     font-weight: bold;
     padding: 12PX 68.86PX;
     border-radius: 8PX;
-    cursor: pointer;
+}
+.footer-container button:hover {
+  background-color: rgba(44, 62, 80, 0.8);
 }
 .selected{
     text-decoration: underline;
@@ -202,7 +205,9 @@ width: 100%;
     padding-top: 16px;
     padding-bottom: 16px;
     border-radius: 8PX;
-    cursor: pointer;
+}
+.item button:hover {
+  background-color: rgba(44, 62, 80, 0.8);
 }
 .dr-img{
   object-fit: cover;
