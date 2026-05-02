@@ -13,6 +13,7 @@
    
         <header class="navbar py-4.5 px-8 2xl:px-0 bg-red">
  <div class="container mx-auto row justify-between">
+                   <a href="#" class="md:hidden"><img src="./src/ICONS/Menu.svg"/></a>
             <div class="row justify-between gap-12">
                 <a href="./index.html" class="text-xl font-bold text-[var(--color-primary)]">MedPrecise</a>
                 <ul class="row justify-between gap-6 text-sm text-[var(--color-muted)] hidden  md:flex">
@@ -50,7 +51,7 @@
 
         </div>
 </header>
-<header class="bottom-header min-h-[125.5px] py-8 px-8 2xl:px-0 lg:py-12  flex items-center justify-center">
+<section class="bottom-header min-h-[125.5px] py-8 px-8 2xl:px-0 lg:py-12  flex items-center justify-center ">
     <div class="container mx-auto" >
      <div class="Breadcrumb row gap-2">
         <p class="caption">Home</p>
@@ -60,8 +61,8 @@
      <h1 class="py-2">Find Doctors</h1>
      <p class="text-[var(--color-dark)] text-[0.938rem]">120+ verified specialists available for clinical consultation</p>
     </div>
-</header>
-<div class="flex flex-col md:flex-row  ">
+</section>
+<div class="flex flex-col md:flex-row pb-36">
     <aside class="left-sidebar w-full md:basis-[290px]">
   <div class="sidebar-content  pl-8 2xl:pl-30 flex flex-col gap-10">
     <div>
@@ -92,7 +93,7 @@
     </div>
 </aside>
 <main class="main w-full md: flex-1 pl-12 pr-8">
-    <div class="row justify-between">
+    <div class="row justify-between border-b !border-[var(--color-border)] pb-6 mb-8">
  <p class="caption">Showing 1-12 of 120 doctors</p>
  <div class="flex items-center gap-[20px]">
   <span class="caption">Sort by:</span>
@@ -114,7 +115,7 @@
         <div class="item ">
          <img src="./src/photos/doctors/Dr. James Wilson.webp" alt="dr.james" class="dr-img"/>
          <div class="px-6">
-            <p class="name pt-[24px]">Dr. James Wilson</p>
+            <h4 class="pt-[24px]">Dr. James Wilson</h4>
          <p class="caption pt-[3px]">Senior Cardiologist</p>
          <div class="row gap-2 pt-4">
             <img src="./src/ICONS/star (2).svg"/>
@@ -132,7 +133,7 @@
 <div class="item ">
          <img src="./src/photos/doctors/Dr. Sarah Chen.webp" alt="dr.sarah" class="dr-img"/>
          <div class="mx-[24px]">
-            <p class="name pt-[24px]">Dr. Sarah Chen</p>
+            <h4 class="pt-[24px]">Dr. Sarah Chen</h4>
          <p class="caption pt-[3px]">Pediatric Specialist</p>
          <div class="row gap-2 pt-4">
             <img src="./src/ICONS/star (2).svg"/>
@@ -150,7 +151,7 @@
 <div class="item ">
          <img src="./src/photos/doctors/Dr. Michael Aris.webp" alt="dr.michael" class="dr-img"/>
          <div class="mx-[24px]">
-            <p class="name pt-[24px]">Dr. Michael Aris</p>
+            <h4 class="pt-[24px]">Dr. Michael Aris</h4>
          <p class="caption pt-[3px]">Neurology Consultant</p>
          <div class="row gap-2 pt-4">
             <img src="./src/ICONS/star (2).svg"/>
@@ -168,7 +169,7 @@
 <div class="item ">
          <img src="./src/photos/doctors/Dr. Elena Rodriguez.webp" alt="dr.elena" class="dr-img"/>
          <div class="mx-[24px]">
-            <p class="name pt-[24px]">Dr. Elena Rodriguez</p>
+            <h4 class="pt-[24px]">Dr. Elena Rodriguez</h4>
          <p class="caption pt-[3px]">Dermatology Specialist</p>
          <div class="row gap-2 pt-4">
             <img src="./src/ICONS/star (2).svg"/>
@@ -186,7 +187,7 @@
 <div class="item ">
          <img src="./src/photos/doctors/Dr. Robert Thorne.webp" alt="dr.robert" class="dr-img"/>
          <div class="mx-[24px]">
-            <p class="name pt-[24px]">Dr. Robert Thorne</p>
+            <h4 class="pt-[24px]">Dr. Robert Thorne</h4>
          <p class="caption pt-[3px]">Maxillofacial Surgeon</p>
          <div class="row gap-2 pt-4">
             <img src="./src/ICONS/star (2).svg"/>
@@ -204,7 +205,7 @@
 <div class="item ">
          <img src="./src/photos/doctors/Dr. Olivia Grant.webp" alt="dr.olivia" class="dr-img"/>
          <div class="mx-[24px]">
-            <p class="name pt-[24px]">Dr. Olivia Grant</p>
+            <h4 class="pt-[24px]">Dr. Olivia Grant</h4>
          <p class="caption pt-[3px]">Oncology Specialist</p>
          <div class="row gap-2 pt-4">
             <img src="./src/ICONS/star (2).svg"/>
@@ -238,39 +239,36 @@
 </div>
 </main>
 </div>
-<footer class="pt-[112px]" >
-       <section class="py-8 px-8  lg:py-0 min-h-[304px] flex items-center justify-center bg-[var(--color-bg3)] border-t  border-[var(--color-border)]">
-     <div class="footer container mx-auto ] ">
+<footer >
+       <section class="py-8 px-10  lg:py-0 min-h-[304px] flex items-center justify-center bg-[var(--color-bg3)] border-t  border-[var(--color-border)]">
+     <div class="footer container mx-auto">
             <div class="footer-container grid grid-cols-1 md:grid-cols-4 gap-8 ">
                 <div>
-                    <h2 class="font-bold text-lg text-[var(--color-primary)] mb-[16.5px]">MedPrecise</h2>
-                    <p class="text-[var(--color-muted)]">Providing high-end clinical care and reliable healthcare solutions for a healthier tomorrow.</p>
+                    <h2 class="font-bold text-lg text-[var(--color-primary)] mb-4">MedPrecise</h2>
+                    <p class="style">© 2024 MEDPRECISE HEALTH.<br>CLINICAL EXCELLENCE GUARANTEED.</p>
                 </div>
                 <div>
-                    <h5>DEPARTMENTS</h5>
+                    <h5 class="text-[var(--color-primary)] mb-4">NAVIGATION</h5>
                     <ul >
-                        <li><a href="#" >Cardiology</a></li>
-                        <li class="my-4"><a href="#" >Pediatrics</a></li>
-                        <li><a href="#">Neurology</a></li>
-                        <li class="mt-4"><a href="#">Dermatology</a></li>
+                        <li><a href="#" class="style">HOME</a></li>
+                        <li class="my-4 underline style"><a href="#" >DOCTORS</a></li>
+                        <li><a href="#"class="style">CLINICS</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h5>HELP & SUPPORT</h5>
+                    <h5 class="text-[var(--color-primary)] mb-4">LEGAL</h5>
                     <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li class="my-4"><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Patient Rights</a></li>
-                        <li class="mt-4"><a href="#">Contact Support</a></li>
+                        <li><a href="#"class="style">PRIVACY POLICY</a></li>
+                        <li class="my-4 style"><a href="#">TERMS OF SERVICE</a></li>
+                        <li><a href="#"class="style">PATIENT RIGHTS</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h5>CONTACT</h5>
+                    <h5 class="text-[var(--color-primary)] mb-4">SUPPORT</h5>
                     <ul>
-                        <li class="text-[var(--color-muted)]">123 Medical Plaza, Health City</li>
-                        <li class="my-4 text-[var(--color-muted)]">contact@medprecise.com</li>
+                        <li><a href="#"class="style">CONTACT SUPPORT</a></li>
+                        <li class="my-4 style"><a href="#">HELP CENTER</a></li>
                     </ul>
-                    <button >EMERGENCY: 911</button>
                 </div>
             </div>
            

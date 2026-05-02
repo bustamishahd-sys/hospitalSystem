@@ -10,6 +10,280 @@
   <link href=".\src\output.css" rel="stylesheet">
 </head>
 <body>
-    
+   <header class="navbar py-4.5 px-8 2xl:px-0 bg-red">
+ <div class="container mx-auto row justify-between">
+                   <a href="#" class="md:hidden"><img src="./src/ICONS/Menu.svg"/></a>
+            <div class="nav-logo">
+                <a href="./index.html" class="text-xl font-bold text-[var(--color-primary)]">MedPrecise</a>
+                </div>
+                <div class="nav-links">
+                     <ul class="row justify-between gap-6 text-sm text-[var(--color-muted)] hidden  md:flex">
+                    <li>
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="./doctors.html" class="nav-link selected">Doctors</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Clinics</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Book</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                
+            </div>
+             <div class="icons">
+                <ul class="row justify-between gap-4">
+                    <li>
+                        <a href="#"><img src="./src/ICONS/pro.svg"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="hidden md:block"><img src="./src/ICONS/not.svg"></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+</header>
+<main class="container mx-auto py-8 px-8 2xl:px-0  lg:py-0 mt-8">
+    <div class="grid  grid-cols-1 md:grid-cols-[41%_59%] lg:grid-cols-[1.5fr_2fr] gap-6 pb-16">
+ <section class="flex flex-col gap-4">
+<div>
+<img src="./src/photos/doc/Doctor Portrait.webp" alt="doctor img" class="rounded-md"/>
+</div>
+<div class="certificates grid grid-cols-4 gap-2">
+<img src="./src/photos/doc/Certificate 1.webp" alt="certificate" class="w-full aspect-square object-cover rounded-md"/>
+<img src="./src/photos/doc/Certificate 2.webp" alt="certificate"  class="w-full aspect-square object-cover rounded-md"/>
+<img src="./src/photos/doc/Certificate 3.webp" alt="certificate"  class="w-full aspect-square object-cover rounded-md"/>
+<div class="certificate cursor-pointer hover:scale-95 transition-all">+4 More</div>
+</div>
+<div class="availability-card bg-[var(--color-bg3)] p-4 border rounded-md border-[var(--color-border)]">
+    <div class="row justify-between">
+        <h3>Next Availability</h3>
+        <p class="text-xs text-[var(--color-muted)]">OCT 2024</p>
+    </div>
+    <div class="days grid grid-cols-7 text-center text-[var(--color-muted)] text-xs py-2">
+        <button>M</button>
+        <button>T</button>
+        <button>W</button>
+        <button>T</button>
+        <button>F</button>
+        <button>S</button>
+        <button>S</button>
+    </div>
+     <div class="month grid grid-cols-7 text-center text-base ">
+        <button class="text-[var(--color-border)] aspect-square row justify-center">12</button>
+        <button class="text-[var(--color-border)] aspect-square row justify-center">13</button>
+        <button class="text-white aspect-square bg-[var(--color-primary)] rounded-md row justify-center">14</button>
+        <button class="text-[var(--color-b)] aspect-square border rounded-md border-[var(--color-border)] row justify-center">15</button>
+        <button class="text-[var(--color-b)] aspect-square border rounded-md border-[var(--color-border)] row justify-center ">16</button>
+        <button class="text-[var(--color-b)] aspect-square border rounded-md border-[var(--color-border)] row justify-center">17</button>
+        <button class="text-[var(--color-border)] aspect-square items-center row justify-center">18</button>
+     </div>
+   </div>
+</section>
+<section>
+ <div class="flex flex-start justify-between">
+    <div >
+<h6>Dr. Julian Sterling, MD</h6>
+<div class="row gap-2 mt-1">
+    <p class="text-white text-xs font-medium bg-[var(--color-darker)] py-2 px-4 border rounded-md ">SENIOR CARDIOLOGIST</p>
+    <img src="./src/ICONS/loc.svg"/>
+    <p class="text-[var(--color-text)] text-[13px] font-medium">Metropolitan Health Center</p>
+</div>
+    </div>
+    <div class="flex flex-col gap-1 items-end ">
+        <div class="row gap-1">
+            <img src="./src/ICONS/star.svg"/>
+<p class="text-lg text-[var(--color-primary)] font-bold">4.9</p>
+</div>
+<div>
+<p class="underline text-[var(--color-text)] text-[13px] font-medium">128 Patient Reviews</p>
+</div>
+    </div>
+ </div>
+ <div class="mt-4 mr-6 ">
+ <h3>About</h3>  
+ <p class="text-[15px] text-[var(--color-text)] mt-2  leading-6">Dr. Julian Sterling is a triple-board certified cardiologist with over 15 years of clinical
+experience specializing in non-invasive cardiovascular imaging and preventive heart care. He
+lead the Cardiology Department at Metropolitan Health Center for 6 years and has published
+over 40 research papers on myocardial health.</p> 
+ </div>
+ <div class="info row justify-between mt-6 py-4">
+    <div class="flex flex-col">
+        <p class="text-[var(--color-muted)] text-xs">CONSULTATION FEE</p>
+        <h4 class="text-[var(--color-darker)]">$180.00 <span class="text-sm text-[var(--color-text)]">/ visit</span></h4>
+    </div>
+    <button>Book Appointment Now</button>
+ </div>
+ <div class="overflow-hidden sch-visit border border-[var(--color-border)] rounded-md bg-[var(--color-bg3)] px-6">
+    <h4 class="text-[var(--color-darker)] my-6">Schedule Your Visit</h4>
+    <div class="flex flex-col gap-2">
+        <p class="text-xs text-[var(--color-muted)] tracking-[1.2px]">SELECT DATE</p>
+        <div class="row gap-2 overflow-hidden">
+            <button class="border-2 rounded-md bg-white border-[var(--color-primary)] py-4 px-8"><p class="text-[var(--color-muted)] text-xs">MON</p>
+            <P class="text-lg font-bold text-[var(--color-darker)]">14</P>
+        <P class="text-[var(--color-muted)] text-xs">OCT</P>
+    </button>
+    <button class="border-1 rounded-md bg-white border-[var(--color-border)] py-4 px-8"><p class="text-[var(--color-muted)] text-xs">TUE</p>
+            <P class="text-lg font-bold text-[var(--color-darker)]">15</P>
+        <P class="text-[var(--color-muted)] text-xs">OCT</P>
+    </button>
+    <button class="border-1 rounded-md bg-white border-[var(--color-border)] py-4 px-8"><p class="text-[var(--color-muted)] text-xs">WED</p>
+            <P class="text-lg font-bold text-[var(--color-darker)]">16</P>
+        <P class="text-[var(--color-muted)] text-xs">OCT</P>
+    </button>
+    <button class="border-1 rounded-md bg-white border-[var(--color-border)] py-4 px-8"><p class="text-[var(--color-muted)] text-xs">THU</p>
+            <P class="text-lg font-bold text-[var(--color-darker)]">17</P>
+        <P class="text-[var(--color-muted)] text-xs">OCT</P>
+    </button>
+    <button class="border-1 rounded-md bg-white border-[var(--color-border)] py-4 px-8"><p class="text-[var(--color-muted)] text-xs">FRI</p>
+            <P class="text-lg font-bold text-[var(--color-darker)]">18</P>
+        <P class="text-[var(--color-muted)] text-xs">OCT</P>
+    </button>
+        </div>
+    </div>
+    <div class="mt-6 mb-6">
+        <p class="text-xs text-[var(--color-muted)] tracking-[1.2px]">AVAILABLE TIME SLOTS</p>
+        <div class="time grid grid-cols-4 gap-2 pt-2">
+     <button class="border-1 rounded-md bg-white border-[var(--color-border)] py-4">
+     <p class="text-sm font-medium text-[var(--color-darker)]">09:00 AM</p>
+    </button>
+    <button class="border-1 rounded-md bg-white border-[var(--color-primary)] py-4">
+     <p class="text-sm font-bold text-[var(--color-darker)]">09:45 AM</p>
+    </button>
+    <button class="border-1 rounded-md bg-white border-[var(--color-border)] py-4">
+     <p class="text-sm font-medium text-[var(--color-darker)]">10:30 AM</p>
+    </button>
+    <button class="border-1 rounded-md bg-white border-[var(--color-border)] py-4">
+     <p class="text-sm font-medium text-[var(--color-darker)]">11:15 AM</p>
+    </button>
+    <button class="border-1 rounded-md bg-white border-[var(--color-border)] py-4">
+     <p class="text-sm font-medium text-[var(--color-darker)]">02:00 PM</p>
+    </button>
+    <button class="border-1 rounded-md bg-white border-[var(--color-border)] py-4">
+     <p class="text-sm font-medium text-[var(--color-darker)]">02:45 PM</p>
+    </button>
+    <button class="border-1 rounded-md bg-white border-[var(--color-border)] py-4">
+     <p class="text-sm font-medium text-[var(--color-darker)]">03:30 PM</p>
+    </button>
+    <button class="border-1 rounded-md bg-white border-[var(--color-border)] py-4">
+     <p class="text-sm font-medium text-[var(--color-darker)]">04:15 PM</p>
+    </button
+        </div>
+    </div>
+ </div>
+ <div class="conf pt-4 mb-6">
+    <button class="bg-[var(--color-primary)] row gap-4 py-6 rounded-md w-full justify-center"><p class="text-white text-[15px] font-semibold tracking-[1.5px]">CONFIRM BOOKING</p>
+    <span><img src="./src/ICONS/arrow.svg"/></span></button>
+    <p class="text-xs text-[var(--color-muted)] mt-2 text-center tracking-[-0.55px]">NO CHARGES WILL BE APPLIED UNTIL AFTER THE CONSULTATION.</p>
+ </div>
+</div>
+</section>
+    </div>
+ <section class="Reviews-Section">
+    <div class="border-t border-[var(--color-border)] pt-16">
+        <div class="row justify-between">
+<div>
+         <h4>Patient Testimonials</h4>
+         <p class="text-[var(--color-text)]">Verified feedback from the last 6 months.</p>
+        </div>
+        <div>
+            <p class="underline font-semibold text-[var(--color-darker)]">View All Reviews</p>
+        </div>
+        </div>
+        <div class="reviews grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 mb-16">
+                    <div class="review ">
+                     <div class="row gap-4">
+                        <div>
+                            <p class="font-bold text-[var(--color-darker)] bg-[var(--color-bg2)] border-0 rounded-xl p-2 ">MA</p></div>
+                        <div>
+                               <p class="font-bold text-[var(--color-darker)]">Marcus Aurelius</p>
+                        <img src="./src/ICONS/5strev.svg" alt="5 Stars Icon">
+                        </div>
+                     </div>
+                        <p class="my-2 text-[var(--color-text)] text-sm italic">
+                            "Dr. Sterling was exceptionally thorough. He took the time to explain my diagnostic results in a way that was easy to understand. Highly professional."
+                        </p>
+                    </div>
+                    <div class="review ">
+                     <div class="row gap-4">
+                        <div>
+                            <p class="font-bold text-[var(--color-darker)] bg-[var(--color-bg2)] border-0 rounded-xl p-2 ">SL</p></div>
+                        <div>
+                               <p class="font-bold text-[var(--color-darker)]">Sarah L.</p>
+                        <img src="./src/ICONS/5strev.svg" alt="5 Stars Icon">
+                        </div>
+                     </div>
+                        <p class="my-2 text-[var(--color-text)] text-sm italic">
+                            "Extremely knowledgeable cardiologist. The facility is top-notch and the scheduling through MedPrecise was seamless."
+                        </p>
+                    </div>
+                   <div class="review ">
+                     <div class="row gap-4">
+                        <div>
+                            <p class="font-bold text-[var(--color-darker)] bg-[var(--color-bg2)] border-0 rounded-xl p-2 ">RJ</p></div>
+                        <div>
+                               <p class="font-bold text-[var(--color-darker)]">Robert Jenkins</p>
+                        <img src="./src/ICONS/4strrev.svg" alt="4 Stars Icon">
+                        </div>
+                     </div>
+                        <p class="my-2 text-[var(--color-text)] text-sm italic">
+                            "Professional and punctual. I appreciated the clean environment and the staff's attention to detail during my stress test."
+                        </p>
+                    </div>
+                </div>
+        </div>
+ </section>  
+ <section>
+    <div class="px-0 py-8"></div>
+ </section> 
+</main>
+<footer >
+       <section class="px-10  py-8 lg:py-0 min-h-[304px] flex items-center justify-center bg-[var(--color-bg3)] border-t  border-[var(--color-border)]">
+     <div class="footer container mx-auto">
+            <div class="footer-container grid grid-cols-1 md:grid-cols-4 gap-8  ">
+                <div>
+                    <h2 class="font-bold text-lg text-[var(--color-primary)] mb-4">MedPrecise</h2>
+                    <p class="style">© 2024 MEDPRECISE HEALTH.<br>CLINICAL EXCELLENCE GUARANTEED.</p>
+                </div>
+                <div>
+                    <h5 class="text-[var(--color-primary)] mb-4">LEGAL</h5>
+                    <ul>
+                        <li><a href="#"class="style">PRIVACY POLICY</a></li>
+                        <li class="my-4 style"><a href="#">TERMS OF SERVICE</a></li>
+                        <li><a href="#"class="style">PATIENT RIGHTS</a></li>
+                    </ul>
+                </div>
+               
+                <div>
+                    <h5 class="text-[var(--color-primary)] mb-4">SUPPORT</h5>
+                    <ul>
+                        <li><a href="#"class="style">CONTACT SUPPORT</a></li>
+                        <li class="my-4 style"><a href="#">FAQS</a></li>
+                        <li><a href="#"class="style">INSURANCE</a></li>
+                    </ul>
+                </div>
+                  <div>
+                    <h5 class="text-[var(--color-primary)] mb-4">SOCIAL</h5>
+                    <ul class="row gap-4" >
+                        <li><img src="./src/ICONS/SOCIAL1.svg"/></li>
+                        <li><img src="./src/ICONS/SOCIAL2.svg"/></li>
+                        <li><img src="./src/ICONS/SOCIAL3.svg"/></li>
+                        
+                    </ul>
+                </div>
+            </div>
+           
+        </div>
+       </section>
+    </footer>
 </body>
 </html>

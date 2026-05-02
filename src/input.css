@@ -17,8 +17,9 @@
     --color-light:#96A9BE;
     --color-dark: #635E55;
     --color-darker:#162839;
+    --color-b:#1B1C1D;
     --font-inter:'Inter';
-    
+
 }
 
 @layer base {
@@ -28,6 +29,7 @@
 }
 @utility row {
     @apply flex items-center ;
+
 }
 @utility nav-link {
     @apply cursor-pointer hover:text-[var(--color-primary)] hover:scale-115 inline-block transition-all duration-200;
@@ -60,16 +62,28 @@ h3{
     color: #162839;
 }
 h4{
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: bold;
-    color: #2C3E50;
+    font-size: 1.5rem;
+    line-height: 1.95rem;
+    font-weight: 600; 
+    color: #162839;
 }
 h5{
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: bold;
+    line-height: 1.219rem;
+    letter-spacing: 1.2px;
+}
+h6{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #162839;
+    font-weight: 600;
+}
+.style{
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 1.2px;
     color: #6B6B6B;
-    margin-bottom: 16px;
 }
 .status{
     font-size: 10px;
@@ -190,12 +204,6 @@ width: 100%;
     margin-bottom: 12px;
     cursor: pointer;
 }
-.name{
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #162839;
-    line-height: 1.95rem;
-}
 .item button{
     color: #FFFFFF;
     background-color: var(--color-primary);
@@ -241,5 +249,36 @@ width: 100%;
   .page-arrow {
     @apply px-3 py-1 border text-[var(--color-dark)] border-[var(--color-border)] hover:bg-gray-100 rounded-xs;
   }
+}
 
+.certificate{
+    background-color: var(--color-bg3);
+    border: 1px var(--color-border) solid;  
+    color: var(--color-primary);
+    font-size: 0.875rem;
+    border-radius: 4px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.availability-card button:hover{
+    transform: scale(0.9);
+}
+.info button{
+    color: #FFFFFF;
+    background-color: var(--color-primary);
+    font-weight: 600;
+    font-size: 0.938rem;
+    padding: 16px 48px;
+    border-radius: 8PX;
+}
+.info{
+    border-top: 1px solid #E0DDD7;
+    border-bottom: 1px solid #E0DDD7;
+}
+@layer components{
+    .review{
+        @apply flex flex-col bg-[var(--color-bg3)] border rounded-lg border-[var(--color-border)] p-6 gap-4
+    }
 }
