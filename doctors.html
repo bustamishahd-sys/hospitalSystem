@@ -11,9 +11,22 @@
 </head>
 <body >
    
-        <header class="navbar py-4.5 px-8 2xl:px-0 bg-red">
+        <header class="navbar py-4.5 px-8 2xl:px-0 bg-red relative">
  <div class="container mx-auto row justify-between">
-                   <a href="#" class="md:hidden"><img src="./src/ICONS/Menu.svg"/></a>
+         <div class="md:hidden">
+                <input type="checkbox" id="menu" class="hidden peer">
+             <div class="flex justify-between items-center p-4">
+                <label for="menu" class="cursor-pointer"><img src="./src/ICONS/Menu.svg" alt="menu"></label>
+             </div>
+             <div class="hidden peer-checked:flex bg-gray-100  absolute top-full left-8 flex flex-col" >
+                <a href="./index.html" class="text-sm text-[var(--color-muted)] py-2">Home</a>
+                 <a href="./doctors.html" class="text-sm text-[var(--color-muted)] py-2">Doctors</a>
+                 <a href="#" class="text-sm text-[var(--color-muted)] py-2">Clinics</a>
+                  <a href="#" class="text-sm text-[var(--color-muted)] py-2">Book</a>
+                   <a href="#" class="text-sm text-[var(--color-muted)] py-2">About</a>
+                   <a href="#" class="text-sm text-[var(--color-muted)] py-2">Contact</a>
+             </div>
+            </div>
             <div class="row justify-between gap-12">
                 <a href="./index.html" class="text-xl font-bold text-[var(--color-primary)]">MedPrecise</a>
                 <ul class="row justify-between gap-6 text-sm text-[var(--color-muted)] hidden  md:flex">
