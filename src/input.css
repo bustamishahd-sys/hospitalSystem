@@ -38,6 +38,31 @@
     .sec{
         @apply py-8 px-8 2xl:px-0 lg:py-0 flex items-center justify-center;
     }
+    .pagination {
+    @apply flex items-center justify-center gap-2 mt-10;
+  }
+
+  .page-btn {
+    @apply px-3 py-1 border rounded-xs border-[var(--color-border)] text-[var(--color-dark)] hover:bg-gray-100 transition duration-200;
+  }
+
+  .page-active {
+    @apply bg-[var(--color-primary)] text-white px-3 py-1 border rounded-xs ;
+  }
+
+  .page-arrow {
+    @apply px-3 py-1 border text-[var(--color-dark)] border-[var(--color-border)] hover:bg-gray-100 rounded-xs;
+  }
+ .review{
+        @apply flex flex-col bg-[var(--color-bg3)] border rounded-lg border-[var(--color-border)] p-6 gap-4
+  }
+.rate{
+        @apply row gap-1 border rounded-sm bg-[var(--color-background)] border-[var(--color-border)] py-1 px-2 justify-center
+    }
+.loc{ 
+    @apply text-[0.875rem] text-[var(--color-dark)] leading-5
+}
+    
 }
 a,button{
     @apply cursor-pointer transition-all duration-150 active:scale-90;
@@ -255,24 +280,6 @@ width: 100%;
     overflow: hidden;
 
 }
-@layer components {
-
-  .pagination {
-    @apply flex items-center justify-center gap-2 mt-10;
-  }
-
-  .page-btn {
-    @apply px-3 py-1 border rounded-xs border-[var(--color-border)] text-[var(--color-dark)] hover:bg-gray-100 transition duration-200;
-  }
-
-  .page-active {
-    @apply bg-[var(--color-primary)] text-white px-3 py-1 border rounded-xs ;
-  }
-
-  .page-arrow {
-    @apply px-3 py-1 border text-[var(--color-dark)] border-[var(--color-border)] hover:bg-gray-100 rounded-xs;
-  }
-}
 
 .certificate{
     background-color: var(--color-bg3);
@@ -300,8 +307,9 @@ width: 100%;
     border-top: 1px solid #E0DDD7;
     border-bottom: 1px solid #E0DDD7;
 }
-@layer components{
-    .review{
-        @apply flex flex-col bg-[var(--color-bg3)] border rounded-lg border-[var(--color-border)] p-6 gap-4
-    }
+
+.C-name{
+    font-size: 0.938rem;
+    line-height: 1.5rem;
+    color: var(--color-primary);
 }

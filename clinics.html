@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Departments | Clinics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href=".\src\output.css" rel="stylesheet">
+</head>
+<body>
+     <header>
+        <div class="container mx-auto row justify-between py-4.5 px-8 relative" >
+            <div class="md:hidden">
+                <input type="checkbox" id="menu" class="hidden peer">
+             <div class="flex justify-between items-center p-4">
+                <label for="menu" class="cursor-pointer"><img src="./src/ICONS/Menu.svg" alt="menu"></label>
+             </div>
+             <div class="hidden peer-checked:flex bg-gray-100  absolute top-full left-8 flex flex-col" >
+                <a href="./index.html" class="text-sm text-[var(--color-muted)] py-2">Home</a>
+                 <a href="./doctors.html" class="text-sm text-[var(--color-muted)] py-2">Doctors</a>
+                 <a href="#" class="text-sm text-[var(--color-muted)] py-2">Clinics</a>
+                  <a href="#" class="text-sm text-[var(--color-muted)] py-2">Book</a>
+                   <a href="#" class="text-sm text-[var(--color-muted)] py-2">About</a>
+                   <a href="#" class="text-sm text-[var(--color-muted)] py-2">Contact</a>
+             </div>
+            </div>
+            <div class="row justify-between gap-12">
+                <a href="./index.html" class="text-xl font-bold text-[var(--color-primary)]">MedPrecise</a>
+                <ul class="row justify-between gap-6 text-sm text-[var(--color-muted)] hidden  md:flex">
+                    <li>
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="./doctors.html" class="nav-link">Doctors</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link selected">Clinics</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Book</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="icons">
+                <ul class="row justify-between gap-4">
+                    <li>
+                        <a href="#"><img src="./src/ICONS/search.svg"></a>
+                    </li>
+                    <li class="hidden md:block">
+                        <a href="#"><img src="./src/ICONS/pro.svg"></a>
+                    </li>
+                    <li class="hidden md:block">
+                        <a href="#"><img src="./src/ICONS/not.svg"></a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </header>
+ <section class="bottom-header px-8 2xl:px-0  flex items-center justify-center ">
+    <div class="container mx-auto py-12 flex flex-col gap-1" >
+        <p class="text-5xl font-bold text-[var(--color-primary)]">Our Medical Clinics</p>
+        <p class="font-semibold text-lg  text-[var(--color-dark)]">Find the nearest specialized facility for your healthcare needs.</p>
+     </div>
+</section>
+<div class="flex flex-col md:flex-row md:gap-6 pb-36">
+    <aside class="left-sidebar w-full md:basis-[288px] ml-8">
+  <div class="sidebar-clinics border rounded-md border-[var(--color-border)] bg-[var(--color-bg3)] p-6 ">
+   <div class="row justify-between mb-4">
+    <p class="text-[15px] text-[var(--color-primary)]">Filters</p>
+    <p  class="text-[13px] font-medium text-[var(--color-darker)]" >Clear all</p>
+   </div>
+
+    <div>
+        <p class="mb-4 text-[15px] text-[var(--color-dark)]">SPECIALTY SERVICES</p>
+    <label class="text-[15px] text-[var(--color-b)] option"><input type="checkbox" name="specialty" value="Cardiology"/>Cardiology</label>
+    <label class="text-[15px] text-[var(--color-b)] option"><input type="checkbox" name="specialty" value="Pediatrics"/>Pediatrics</label>
+    <label class="text-[15px] text-[var(--color-b)] option"><input type="checkbox" name="specialty" value="Neurology"/>Neurology</label>
+    <label class="text-[15px] text-[var(--color-b)] option"><input type="checkbox" name="specialty" value="Orthopedics"/>Orthopedics</label>
+    </div>
+   <div>
+        <p class="mb-4 text-[15px] text-[var(--color-dark)]">FACILITY TYPE</p>
+    <label class="option text-[15px] text-[var(--color-b)] "><input type="radio" name="FACILITY TYPE" value="1"/>General Hospital</label>
+    <label class="option text-[15px] text-[var(--color-b)] "><input type="radio" name="FACILITY TYPE" value="2"/>Specialized Center</label>
+    <label class="option text-[15px] text-[var(--color-b)] "><input type="radio" name="FACILITY TYPE" value="3"/>Diagnostic Lab</label>
+    </div>
+    <div>
+        <p class="mb-4 text-[15px] text-[var(--color-dark)]">AVAILABILITY</p>
+        <button class="w-full mb-1 py-2 rounded-md border  bg-[var(--color-bg2)] text-[var(--color-primary)] border-[var(--color-border)]">
+      Open Now
+    </button>
+    <button class="w-full py-2 rounded-md border bg-[var(--color-background)] text-[var(--color-dark)] border-[var(--color-border)]">
+      24/7 Service
+    </button>
+    </div>
+    </div>
+</aside>
+<main class="main w-full md: flex-1 mr-8">
+    <div class="items grid grid-cols-1 lg:grid-cols-2 gap-6">
+<div class="item ">
+         <img src="./src/photos/clinics/c1.webp" alt="clinic1" class="dr-img"/>
+         <div class="mx-6">
+            <div class="flex justify-between pt-6">
+             <p class=" C-name">Central Specialty Hospital</p>
+            <div class="rate">
+            <img src="./src/ICONS/star (2).svg"/>
+         <p class="C-name">4.9</p>
+         <p class="text-[15px] text-[var(--color-dark)]">(1.2K)</p>
+         </div>
+            </div>
+         <div class="row gap-2 py-4">
+        <img src="./src/ICONS/loc.svg"/>
+         <p class="loc">122 Medical Plaza, Downtown Central</p>
+         </div>
+         <button>Book Appointment</button>
+         </div>
+         
+        </div>
+</div>
+</main>
+</div>
+</body>
+</html>
