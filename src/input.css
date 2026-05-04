@@ -313,3 +313,10 @@ width: 100%;
     line-height: 1.5rem;
     color: var(--color-primary);
 }
+.clinic{
+     border: 1px solid var(--color-border);
+    background-color: var(--color-bg3);
+    border-radius: 8px;
+    overflow: hidden;
+    height: 454px;
+}

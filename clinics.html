@@ -72,14 +72,40 @@
         <p class="font-semibold text-lg  text-[var(--color-dark)]">Find the nearest specialized facility for your healthcare needs.</p>
      </div>
 </section>
-<div class="flex flex-col md:flex-row md:gap-6 pb-36">
-    <aside class="left-sidebar w-full md:basis-[288px] ml-8">
+<section>
+    <div class="sorting md:hidden container mx-auto px-8">
+        <div class="row justify-between mb-4">
+    <p class="text-[15px] text-[var(--color-primary)]">Filters</p>
+    <p  class="text-[13px] font-medium text-[var(--color-darker)]" >Clear all</p>
+   </div>
+   <div class="row gap-2 mb-8">
+<select class="w-full  bg-[var(--color-bg3)] border border-[var(--color-border)] rounded-md py-2 px-4 text-[15px] text-[var(--color-primary)] focus:outline-none">
+        <option>Location</option>
+      </select>
+      <select class="w-full bg-[var(--color-bg3)] border border-[var(--color-border)] rounded-md py-2 px-4 text-[15px] text-[var(--color-primary)] focus:outline-none">
+        <option>Specialty</option>
+      </select>
+      <select class="w-full  bg-[var(--color-bg3)] border border-[var(--color-border)] rounded-md py-2 px-4 text-[15px] text-[var(--color-primary)] focus:outline-none">
+        <option>FACILITY</option>
+      </select>
+
+   </div>
+    </div>
+</section>
+<div class="flex flex-col md:flex-row md:gap-6 pb-36 px-8 md:px-0">
+    <aside class="left-sidebar w-full md:basis-[288px] ml-8 hidden md:block">
   <div class="sidebar-clinics border rounded-md border-[var(--color-border)] bg-[var(--color-bg3)] p-6 ">
    <div class="row justify-between mb-4">
     <p class="text-[15px] text-[var(--color-primary)]">Filters</p>
     <p  class="text-[13px] font-medium text-[var(--color-darker)]" >Clear all</p>
    </div>
-
+   <div class="mb-4">
+     <p class="mb-2 text-[15px] text-[var(--color-dark)]">LOCATION</p>
+      <select class="w-full  bg-[var(--color-background)] border border-[var(--color-border)] rounded-md py-2 px-4 text-[15px] text-[var(--color-b)] focus:outline-none">
+        <option>All Neighborhoods</option>
+      </select>
+   </div>
+  
     <div>
         <p class="mb-4 text-[15px] text-[var(--color-dark)]">SPECIALTY SERVICES</p>
     <label class="text-[15px] text-[var(--color-b)] option"><input type="checkbox" name="specialty" value="Cardiology"/>Cardiology</label>
@@ -104,9 +130,9 @@
     </div>
     </div>
 </aside>
-<main class="main w-full md: flex-1 mr-8">
-    <div class="items grid grid-cols-1 lg:grid-cols-2 gap-6">
-<div class="item ">
+<main class="main w-full md: flex-1 mr-8 ">
+    <div class="clinics grid grid-cols-1 lg:grid-cols-2 gap-6">
+<div class="clinic ">
          <img src="./src/photos/clinics/c1.webp" alt="clinic1" class="dr-img"/>
          <div class="mx-6">
             <div class="flex justify-between pt-6">
@@ -117,16 +143,164 @@
          <p class="text-[15px] text-[var(--color-dark)]">(1.2K)</p>
          </div>
             </div>
-         <div class="row gap-2 py-4">
+         <div class="row gap-2 py-1">
         <img src="./src/ICONS/loc.svg"/>
          <p class="loc">122 Medical Plaza, Downtown Central</p>
          </div>
-         <button>Book Appointment</button>
+         <div class="row gap-2 mb-6">
+            <div class="row gap-1 border rounded-md border-none bg-[var(--color-bg2)] px-2 py-1">
+                <img src="./src/ICONS/Card.svg" alt="Cardiology-icon"/>
+                <p class="text-xs text-[var(--color-primary)]">Cardiology</p>
+            </div>
+            <div class="row gap-1 border rounded-md border-none bg-[var(--color-bg2)] px-2 py-1">
+                <img src="./src/ICONS/Neur.svg" alt="Neurology-icon"/>
+                <p class="text-xs text-[var(--color-primary)]">Neurology</p>
+            </div>
+            <div class="row gap-1 border rounded-md border-none bg-[var(--color-bg2)] px-2 py-1">
+                <img src="./src/ICONS/Op.svg" alt="Ophthalmology-icon"/>
+                <p class="text-xs text-[var(--color-primary)]">Ophthalmology</p>
+            </div>
          </div>
-         
+         <div class="row gap-2">
+             <button class="text-[var(--color-background)] text-[15px] border rounded-md border-none bg-[var(--color-primary)] py-4 w-full">View Doctors</button>
+         <button class="text-[var(--color-b)] text-[15px] border rounded-md border-[var(--color-border)] bg-[var(--color-bg2)] py-4 w-full">Contact</button>
+         </div>
+         </div>
+        </div>
+<div class="clinic ">
+         <img src="./src/photos/clinics/c2.webp" alt="clinic2" class="dr-img"/>
+         <div class="mx-6">
+            <div class="flex justify-between pt-6">
+             <p class=" C-name">Summit Neurology Institute</p>
+            <div class="rate">
+            <img src="./src/ICONS/star (2).svg"/>
+         <p class="C-name">4.8</p>
+         <p class="text-[15px] text-[var(--color-dark)]">(850)</p>
+         </div>
+            </div>
+         <div class="row gap-2 py-1">
+        <img src="./src/ICONS/loc.svg"/>
+         <p class="loc">88 Highland Blvd, North Heights</p>
+         </div>
+         <div class="row gap-2 mb-6">
+            <div class="row gap-1 border rounded-md border-none bg-[var(--color-bg2)] px-2 py-1">
+                <img src="./src/ICONS/Advanced Imaging.svg" alt="Advanced Imaging-icon"/>
+                <p class="text-xs text-[var(--color-primary)]">Advanced Imaging</p>
+            </div>
+            <div class="row gap-1 border rounded-md border-none bg-[var(--color-bg2)] px-2 py-1">
+                <img src="./src/ICONS/Lab Services.svg" alt="Lab Services-icon"/>
+                <p class="text-xs text-[var(--color-primary)]">Lab Services</p>
+            </div>
+         </div>
+         <div class="row gap-2">
+             <button class="text-[var(--color-background)] text-[15px] border rounded-md border-none bg-[var(--color-primary)] py-4 w-full">View Doctors</button>
+         <button class="text-[var(--color-b)] text-[15px] border rounded-md border-[var(--color-border)] bg-[var(--color-bg2)] py-4 w-full">Contact</button>
+         </div>
+         </div>
+        </div>
+<div class="clinic ">
+         <img src="./src/photos/clinics/c3.webp" alt="clinic3" class="dr-img"/>
+         <div class="mx-6">
+            <div class="flex justify-between pt-6">
+             <p class=" C-name">Bright Pediatrics Center</p>
+            <div class="rate">
+            <img src="./src/ICONS/star (2).svg"/>
+         <p class="C-name">5.0</p>
+         <p class="text-[15px] text-[var(--color-dark)]">(420)</p>
+         </div>
+            </div>
+         <div class="row gap-2 py-1">
+        <img src="./src/ICONS/loc.svg"/>
+         <p class="loc">45 Oak Street, Eastside Gardens</p>
+         </div>
+         <div class="row gap-2 mb-6">
+            <div class="row gap-1 border rounded-md border-none bg-[var(--color-bg2)] px-2 py-1">
+                <img src="./src/ICONS/Ped.svg" alt="Pediatrics-icon"/>
+                <p class="text-xs text-[var(--color-primary)]">Pediatrics</p>
+            </div>
+            <div class="row gap-1 border rounded-md border-none bg-[var(--color-bg2)] px-2 py-1">
+                <img src="./src/ICONS/Immunization.svg" alt="Immunization-icon"/>
+                <p class="text-xs text-[var(--color-primary)]">Immunization</p>
+            </div>
+         </div>
+         <div class="row gap-2">
+             <button class="text-[var(--color-background)] text-[15px] border rounded-md border-none bg-[var(--color-primary)] py-4 w-full">View Doctors</button>
+         <button class="text-[var(--color-b)] text-[15px] border rounded-md border-[var(--color-border)] bg-[var(--color-bg2)] py-4 w-full">Contact</button>
+         </div>
+         </div>
+        </div>
+<div class="clinic ">
+         <img src="./src/photos/clinics/c4.webp" alt="clinic4" class="dr-img"/>
+         <div class="mx-6">
+            <div class="flex justify-between pt-6">
+             <p class=" C-name">Precise Diagnostics Lab</p>
+            <div class="rate">
+            <img src="./src/ICONS/star (2).svg"/>
+         <p class="C-name">4.7</p>
+         <p class="text-[15px] text-[var(--color-dark)]">(2.1K)</p>
+         </div>
+            </div>
+         <div class="row gap-2 py-1">
+        <img src="./src/ICONS/loc.svg"/>
+         <p class="loc">211 BioTech Way, Science Park</p>
+         </div>
+         <div class="row gap-2 mb-6">
+            <div class="row gap-1 border rounded-md border-none bg-[var(--color-bg2)] px-2 py-1">
+                <img src="./src/ICONS/Blood Tests.svg" alt="Blood Tests-icon"/>
+                <p class="text-xs text-[var(--color-primary)]">Blood Tests</p>
+            </div>
+            <div class="row gap-1 border rounded-md border-none bg-[var(--color-bg2)] px-2 py-1">
+                <img src="./src/ICONS/X-Ray & MRI.svg" alt="X-Ray & MRI-icon"/>
+                <p class="text-xs text-[var(--color-primary)]">X-Ray & MRI</p>
+            </div>
+         </div>
+         <div class="row gap-2">
+             <button class="text-[var(--color-background)] text-[15px] border rounded-md border-none bg-[var(--color-primary)] py-4 w-full">View Doctors</button>
+         <button class="text-[var(--color-b)] text-[15px] border rounded-md border-[var(--color-border)] bg-[var(--color-bg2)] py-4 w-full">Contact</button>
+         </div>
+         </div>
         </div>
 </div>
 </main>
 </div>
+<footer >
+       <section class="px-10 flex items-center justify-center bg-[var(--color-bg3)] border-t  border-[var(--color-border)]">
+     <div class="footer container mx-auto py-12">
+            <div class="footer-container grid grid-cols-1 md:grid-cols-4 gap-8  ">
+                <div>
+                    <h2 class="font-bold text-lg text-[var(--color-primary)] mb-4">MedPrecise</h2>
+                    <p class="style">© 2024 MEDPRECISE HEALTH.<br>CLINICAL EXCELLENCE GUARANTEED.</p>
+                </div>
+                <div>
+                    <h5 class="text-[var(--color-primary)] mb-4">LEGAL</h5>
+                    <ul>
+                        <li><a href="#"class="style">PRIVACY POLICY</a></li>
+                        <li class="my-4 style"><a href="#">TERMS OF SERVICE</a></li>
+                        <li><a href="#"class="style">PATIENT RIGHTS</a></li>
+                    </ul>
+                </div>
+               
+                <div>
+                    <h5 class="text-[var(--color-primary)] mb-4">SUPPORT</h5>
+                    <ul>
+                        <li><a href="#"class="style">CONTACT SUPPORT</a></li>
+                        <li class="my-4 style"><a href="#">FAQS</a></li>
+                        <li><a href="#"class="style">INSURANCE</a></li>
+                    </ul>
+                </div>
+                  <div>
+                    <h5 class="text-[var(--color-primary)] mb-4">SOCIAL</h5>
+                    <ul class="row gap-4" >
+                        <li><img src="./src/ICONS/SOCIAL1.svg"/></li>
+                        <li><img src="./src/ICONS/SOCIAL2.svg"/></li>
+                        <li><img src="./src/ICONS/SOCIAL3.svg"/></li>
+                        
+                    </ul>
+                </div>
+            </div>
+           
+        </div>
+       </section>
+    </footer>
 </body>
 </html>
