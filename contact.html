@@ -66,11 +66,73 @@
 </header> 
 <main>
     <section class="heading px-8">
-        <div class="container mx-auto py-16">
+        <div class="container mx-auto pt-16">
             <p class="text-5xl font-bold text-[var(--color-darker)]">Get in Touch</p>
         <p class="text-2xl font-semibold text-[var(--color-dark)] mt-2">We're here to help with your clinical needs.</p>
         </div>
-        
+    </section>
+    <section class="px-8">
+        <div class="container mx-auto py-16 grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-12">
+            <div class="border p-6 border-[var(--color-border)] bg-[var(--color-bg3)] rounded-md">
+                  <form>
+                <div class="form grid grid-cols-2 gap-4">
+                    <div>
+                    <label for="name" class="">Full Name</label>
+                    <input type="text" id="name" name="full name" placeholder="John Doe">
+                </div>
+                <div>
+                  <label for="email" >Email Address</label>
+                    <input type="email" id="email" name="email address" placeholder="john@example.com">   
+                </div>
+                  <div>
+                  <label for="phone" >Phone Number</label>
+                    <input type="tel" id="phone" name="Phone Number" placeholder="+1 (555) 000-0000">   
+                </div>
+                  <div>
+                  <label for="department">Department</label><br>
+
+                  <select id="department"> <option class="text-[var(--color-b)]">General Inquiry</option></select>
+                </div>
+                </div>
+                <div class="form my-4">
+                    <label for="message">Message</label><br>
+                    <textarea placeholder="How can we assist you today?" rows="6"></textarea>
+                </div>
+                <button class="bg-[var(--color-primary)] text-white text-[15px] font-semibold rounded-md py-4 px-12">Send Message</button>
+            </form>
+            </div>
+            <div class="info&maps flex flex-col gap-4">
+            <div class="info border p-6 border-[var(--color-border)] bg-[var(--color-bg3)] rounded-md flex flex-col gap-4">
+          <div class="loc flex gap-4">
+            <div class=" bg-[var(--color-bg2)] flex items-center justify-center w-9 h-9 rounded-md"><img src="./src/ICONS/darklocation.svg"/></div>
+            <div>
+                 <h3>Central HQ</h3>
+            <p class="text-[15px] text-[var(--color-dark)]">742 Precision Way, Medical District Rochester, MN 55901</p>
+            </div>
+           </div>
+            <div class="phone flex gap-4">
+            <div class=" bg-[var(--color-bg2)] flex items-center justify-center w-9 h-9 rounded-md"><img src="./src/ICONS/phone.svg"/></div>
+            <div>
+                 <h3>Phone Numbers</h3>
+            <p class="text-[15px] text-[var(--color-dark)]">General: +1 (800) 555-0199 Appointments: +1 (800) 555-0122</p>
+            </div>
+           </div>
+            <div class="email flex gap-4">
+            <div class=" bg-[var(--color-bg2)] flex items-center justify-center w-9 h-9 rounded-md"><img src="./src/ICONS/massege.svg"/></div>
+            <div>
+                 <h3>Support Emails</h3>
+            <p class="text-[15px] text-[var(--color-dark)]">help@medprecise.com records@medprecise.com</p>
+            </div>
+           </div>
+
+            </div>
+            <div class="maps  border border-[var(--color-border)] bg-[var(--color-bg3)] rounded-md overflow-hidden">
+               <img src="./src/photos/contact/AB6AXU~1.webp" alt="maps" class="w-full object-cover h-full"> 
+            </div>
+            </div>
+            
+          
+        </div>
     </section>
 </main>
 </body>

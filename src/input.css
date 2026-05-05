@@ -320,3 +320,15 @@ width: 100%;
     overflow: hidden;
     height: 454px;
 }
+.form input{
+    @apply border border-[var(--color-border)] px-2 py-2 rounded-md w-full bg-[var(--color-background)]
+}
+.form label{
+    @apply text-[13px] text-[var(--color-muted)] font-medium
+}
+.form select{
+    @apply border border-[var(--color-border)] px-2 py-2 rounded-md w-full bg-[var(--color-background)]
+}
+.form textarea{
+     @apply border border-[var(--color-border)] px-2 py-2 rounded-md w-full bg-[var(--color-background)]
+}
