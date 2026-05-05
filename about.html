@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Departments | About</title>
+  <link href=".\src\output.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href=".\src\output.css" rel="stylesheet">
+</head>
+<body>
+     <header class="navbar py-4.5 px-8 2xl:px-0 bg-red relative">
+ <div class="container mx-auto row justify-between">
+         <div class="md:hidden">
+                <input type="checkbox" id="menu" class="hidden peer">
+             <div class="flex justify-between items-center p-4">
+                <label for="menu" class="cursor-pointer"><img src="./src/ICONS/Menu.svg" alt="menu"></label>
+             </div>
+             <div class="hidden peer-checked:flex bg-gray-100  absolute top-full left-8 flex flex-col px-4" >
+                <a href="./index.html" class="text-sm text-[var(--color-muted)] py-2">Home</a>
+                 <a href="./doctors.html" class="text-sm text-[var(--color-muted)] py-2">Doctors</a>
+                 <a href="./clinics.html" class="text-sm text-[var(--color-muted)] py-2">Clinics</a>
+                  <a href="#" class="text-sm text-[var(--color-muted)] py-2">Book</a>
+                   <a href="./about.html" class="text-sm text-[var(--color-muted)] py-2">About</a>
+                   <a href="#" class="text-sm text-[var(--color-muted)] py-2">Contact</a>
+             </div>
+            </div>
+            <div class="row justify-between gap-12">
+                <a href="./index.html" class="text-xl font-bold text-[var(--color-primary)]">MedPrecise</a>
+                <ul class="row justify-between gap-6 text-sm text-[var(--color-muted)] hidden  md:flex">
+                    <li>
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="./doctors.html" class="nav-link ">Doctors</a>
+                    </li>
+                    <li>
+                        <a href="./clinics.html" class="nav-link">Clinics</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link ">Book</a>
+                    </li>
+                    <li>
+                        <a href="./about.html" class="nav-link selected">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="icons">
+                <ul class="row justify-between gap-4">
+                    <li>
+                        <a href="#"><img src="./src/ICONS/pro.svg"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./src/ICONS/not.svg"></a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+</header>
+<main>
+    <section class="hero-about min-h-screen px-8 row justify-center relative ">
+        <div class="container mx-auto items-center">
+     <img src="./src/photos/about/MedPrecise Team.webp" class="absolute inset-0 w-full h-full object-cover"/>
+     <img src="./src/photos/about/Gradient.webp" class="absolute inset-0 w-full h-full object-cover"/>
+     <div class="relative z-10 h-full row">
+    <div class=" text-white w-[60%]">
+      <p class="text-5xl font-bold mb-4">
+        Clinical Excellence Through Precision.
+      </p>
+      <p class="mb-4 text-[15px]">
+        Dedicated to providing world-class healthcare powered by advanced technology.
+      </p>
+      <button class="bg-white text-[var(--color-primary)] px-6 py-2 rounded-lg">
+        Meet Our Specialists
+      </button>
+    </div>
+  </div>
+        </div>   
+    </section>
+    <section class="mission-vision px-8 row justify-center py-16">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+     <div class="border border-[var(--color-border)] bg-[var(--color-bg3)] py-6 px-6 rounded-md">
+        <div class="row gap-4">
+            <img src="./src/ICONS/mission.svg" alt="Mission-icon"/>
+        <h6>Our Mission</h6>
+        </div>
+        
+        <p class="text-[15px] text-[var(--color-dark)]">To deliver uncompromising healthcare services through evidence-based medicine, innovative clinical research, and a deep commitment to patient outcomes. We strive to be the beacon of medical integrity in our community.</p>
+     </div>
+     <div class="border border-[var(--color-border)] bg-[var(--color-bg3)] py-6 px-6 rounded-md">
+        <div class="row gap-4">
+            <img src="./src/ICONS/vision.svg" alt="vision-icon"/>
+        <h6 >Our Vision</h6>
+        </div>
+        
+        <p class="text-[15px] text-[var(--color-dark)]">To redefine the standard of modern clinical care by integrating artificial
+intelligence with human expertise, creating a global benchmark for
+personalized, precise, and preventive medical excellence.</p>
+     </div>
+        </div>
+
+    </section>
+    <section class="choose-us px-8 row justify-center py-16 border-y border-[var(--color-border)] ">
+  <div class="container mx-auto">
+    <div class="justify-center row flex-col gap-2">
+        <h6>Why Choose Us</h6>
+    <div class="w-[96px] h-1 bg-[var(--color-darker)]"> </div>
+    </div>
+    <div class="mt-12 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-6" >
+        <div class="row flex-col gap-2 p-6">
+            <div class="aspect-square bg-[var(--color-bg2)] p-5 rounded-xl"><img src="./src/ICONS/Advanced Technology.svg"/></div>
+            <h3>Advanced Technology</h3>
+            <p class=" text-center text-[13px] font-medium text-[var(--color-muted)]">State-of-the-art diagnostic imaging and robotic-assisted surgical systems.</p>
+        </div>
+        <div class="row flex-col gap-2 p-6">
+            <div class="aspect-square bg-[var(--color-bg2)] p-5 rounded-xl"><img src="./src/ICONS/Patient-Centric Care.svg"/></div>
+            <h3>Expert Specialists</h3>
+            <p class="text-center text-[13px] font-medium text-[var(--color-muted)]">Board-certified physicians with international expertise across 40+ specialties.</p>
+        </div>
+        <div class="row flex-col gap-2 p-6">
+            <div class="aspect-square bg-[var(--color-bg2)] p-5 rounded-xl"><img src="./src/ICONS/Seamless Experience.svg"/></div>
+            <h3>Patient-Centric Care</h3>
+            <p class="text-center text-[13px] font-medium text-[var(--color-muted)]">Personalized treatment plans designed around your unique lifestyle and goals.</p>
+        </div>
+        <div class="row flex-col gap-2 p-6">
+            <div class="aspect-square bg-[var(--color-bg2)] p-5 rounded-xl"><img src="./src/ICONS/Seamless Experience.svg"/></div>
+            <h3>Seamless Experience</h3>
+            <p class="text-center text-[13px] font-medium text-[var(--color-muted)]">Integrated digital portal for records, billing, and virtual consultations.</p>
+        </div>
+    </div>
+  </div>
+  
+    </section>
+    <section class="leadership px-8 py-16">
+        <div class="container mx-auto justify-center row flex-col">
+            <h6>Our Leadership</h6>
+            <div class="leaders mt-12 grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="leader text-center">
+                    <img src="./src/photos/about/Dr. Julian Thorne.webp" alt="julian"/>
+                    <h3 class="mt-4">Dr. Julian Thorne</h3>
+                    <p class="font-medium text-[var(--color-muted)] text-[13px]">CHIEF MEDICAL OFFICER</p>
+                </div>
+                 <div class="leader text-center">
+                    <img src="./src/photos/about/Dr. Elena Rodriguez.webp" alt="elena"/>
+                    <h3 class="mt-4">Dr. Elena Rodriguez</h3>
+                    <p class="font-medium text-[var(--color-muted)] text-[13px]">DIRECTOR OF SURGERY</p>
+                </div>
+                 <div class="leader text-center">
+                    <img src="./src/photos/about/Dr. Arthur Sterling.webp" alt="arthur"/>
+                    <h3 class="mt-4">Dr. Arthur Sterling</h3>
+                    <p class="font-medium text-[var(--color-muted)] text-[13px]">HEAD OF CLINICAL RESEARCH</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</main>
+<footer >
+       <section class="px-10 flex items-center justify-center bg-[var(--color-bg3)] border-t  border-[var(--color-border)]">
+     <div class="footer container mx-auto py-12">
+            <div class="footer-container grid grid-cols-1 md:grid-cols-4 gap-8  ">
+                <div>
+                    <h2 class="font-bold text-lg text-[var(--color-primary)] mb-4">MedPrecise</h2>
+                    <p class="style">© 2024 MEDPRECISE HEALTH.<br>CLINICAL EXCELLENCE GUARANTEED.</p>
+                </div>
+                <div>
+                    <h5 class="text-[var(--color-primary)] mb-4">LEGAL</h5>
+                    <ul>
+                        <li><a href="#"class="style">PRIVACY POLICY</a></li>
+                        <li class="my-4 style"><a href="#">TERMS OF SERVICE</a></li>
+                        <li><a href="#"class="style">PATIENT RIGHTS</a></li>
+                    </ul>
+                </div>
+               
+                <div>
+                    <h5 class="text-[var(--color-primary)] mb-4">SUPPORT</h5>
+                    <ul>
+                        <li><a href="#"class="style">CONTACT SUPPORT</a></li>
+                        <li class="my-4 style"><a href="#">FAQS</a></li>
+                        <li><a href="#"class="style">INSURANCE</a></li>
+                    </ul>
+                </div>
+                  <div>
+                    <h5 class="text-[var(--color-primary)] mb-4">SOCIAL</h5>
+                    <ul class="row gap-4" >
+                        <li><img src="./src/ICONS/SOCIAL1.svg"/></li>
+                        <li><img src="./src/ICONS/SOCIAL2.svg"/></li>
+                        <li><img src="./src/ICONS/SOCIAL3.svg"/></li>
+                        
+                    </ul>
+                </div>
+            </div>
+           
+        </div>
+       </section>
+    </footer>
+</body>
+</html>
