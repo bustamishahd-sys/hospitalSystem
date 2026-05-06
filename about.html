@@ -11,9 +11,9 @@
   <link href=".\src\output.css" rel="stylesheet">
 </head>
 <body>
-     <header class="navbar  ">
- <div class="container mx-auto py-4.5 px-8 2xl:px-0 row justify-between relative">
-      <div class="md:hidden">
+<header>
+        <div class="container mx-auto row justify-between py-4.5 px-8 relative" >
+            <div class="md:hidden z-50">
                 <input type="checkbox" id="menu" class="hidden peer">
              <div class="flex justify-between items-center p-4">
                 <label for="menu" class="cursor-pointer"><img src="./src/ICONS/Menu.svg" alt="menu"></label>
@@ -22,7 +22,7 @@
                 <a href="./index.html" class="text-sm text-[var(--color-muted)] py-2">Home</a>
                  <a href="./doctors.html" class="text-sm text-[var(--color-muted)] py-2">Doctors</a>
                  <a href="./clinics.html" class="text-sm text-[var(--color-muted)] py-2">Clinics</a>
-                  <a href="#" class="text-sm text-[var(--color-muted)] py-2">Book</a>
+                  <a href="./book.html" class="text-sm text-[var(--color-muted)] py-2">Book</a>
                    <a href="./about.html" class="text-sm text-[var(--color-muted)] py-2">About</a>
                    <a href="./contact.html" class="text-sm text-[var(--color-muted)] py-2">Contact</a>
              </div>
@@ -31,16 +31,16 @@
                 <a href="./index.html" class="text-xl font-bold text-[var(--color-primary)]">MedPrecise</a>
                 <ul class="row justify-between gap-6 text-sm text-[var(--color-muted)] hidden  md:flex">
                     <li>
-                        <a href="./index.html" class="nav-link">Home</a>
+                        <a href="./index.html" class="nav-link ">Home</a>
                     </li>
                     <li>
-                        <a href="./doctors.html" class="nav-link ">Doctors</a>
+                        <a href="./doctors.html" class="nav-link">Doctors</a>
                     </li>
                     <li>
                         <a href="./clinics.html" class="nav-link">Clinics</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link ">Book</a>
+                        <a href="./book.html" class="nav-link">Book</a>
                     </li>
                     <li>
                         <a href="./about.html" class="nav-link selected">About</a>
@@ -53,9 +53,12 @@
             <div class="icons">
                 <ul class="row justify-between gap-4">
                     <li>
+                        <a href="#"><img src="./src/ICONS/search.svg"></a>
+                    </li>
+                    <li class="hidden md:block">
                         <a href="#"><img src="./src/ICONS/pro.svg"></a>
                     </li>
-                    <li>
+                    <li class="hidden md:block">
                         <a href="#"><img src="./src/ICONS/not.svg"></a>
                     </li>
                 </ul>
@@ -63,7 +66,7 @@
             </div>
 
         </div>
-</header>
+    </header>
 <main>
     <section class="hero-about min-h-screen px-8 row justify-center relative ">
         <div class="container mx-auto items-center">
