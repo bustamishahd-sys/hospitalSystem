@@ -75,7 +75,7 @@
         <div class="container mx-auto py-16 grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-12">
             <div class="border p-6 border-[var(--color-border)] bg-[var(--color-bg3)] rounded-md">
                   <form>
-                <div class="form grid grid-cols-2 gap-4">
+                <div class="form grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                     <label for="name" class="">Full Name</label>
                     <input type="text" id="name" name="full name" placeholder="John Doe">
@@ -96,7 +96,7 @@
                 </div>
                 <div class="form my-4">
                     <label for="message">Message</label><br>
-                    <textarea placeholder="How can we assist you today?" rows="6"></textarea>
+                    <textarea id="message" placeholder="How can we assist you today?" rows="6"></textarea>
                 </div>
                 <button class="bg-[var(--color-primary)] text-white text-[15px] font-semibold rounded-md py-4 px-12">Send Message</button>
             </form>

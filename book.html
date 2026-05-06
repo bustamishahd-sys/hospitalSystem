@@ -74,19 +74,79 @@
 specialists.</p>
     </div>
 </section>
-<section>
-    <div>
-        <div class="information">
-      <div class="Contact-Details">
+<section class="px-8">
+    <div class="container grid grid-cols-1 md:grid-cols-[1.5fr_1fr] gap-12">
+        <div class="information flex flex-col gap-6">
+      <div class="Contact-Details  border border-[var(--color-border)] bg-[var(--color-bg3)] rounded-md p-6">
+        <div class="row gap-2 mb-4">
+            <img src="./src/ICONS/Contact Details.svg"/>
+           <h3>Contact Details</h3>
+</div>
+                 <div class="form grid grid-cols-1 md:grid-cols-2 gap-4">
+                     <div>
+                    <label for="name" >Full Name</label>
+                    <input type="text" id="name" name="full name" placeholder="John Doe">
+                </div>
+                <div>
+                  <label for="email" >Email Address</label>
+                    <input type="email" id="email" name="email address" placeholder="john@example.com">   
+                </div>
+            </div>
+                  <div class="form mt-4">
+                  <label for="phone" >Phone Number</label>
+                    <input type="tel" id="phone" name="Phone Number" placeholder="+1 (555) 000-0000">   
+                </div>
+
 
       </div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div class="Patient-Info border border-[var(--color-border)] bg-[var(--color-bg3)] rounded-md p-6">
+     <div class="row gap-2 mb-4">
+       <img src="./src/ICONS/Patient Info.svg">
+           <h3>Patient Info</h3>
         </div>
-        <div class="booking-summary">
-
+        <div class="form grid grid-cols-1 md:grid-cols-2 gap-4">
+                     <div>
+                    <label for="Age">Age</label>
+                    <input type="number" id="Age" name="Age" placeholder="25">
+                </div>
+                <div>
+                  <label for="Gender" >Gender</label>
+                    <select type="radio" id="Gender" name="Gender"><option class="text-[15px] text-[var(--color-b)]">Male</option>
+                    <option class="text-[15px] text-[var(--color-b)] >Female</option></select> 
+                </div>
+            </div>
+             <div class="form mt-4">
+                    <label for="note">Notes / Optional Symptoms</label><br>
+                    <textarea id="note" placeholder="Briefly describe any specific concerns or medical history..." rows="4"></textarea>
+                </div>
+      </div>
+      <div class="Appointment-Selection border border-[var(--color-border)] bg-[var(--color-bg3)] rounded-md p-6">
+        <div class="row gap-2 mb-4">
+       <img src="./src/ICONS/ap selection.svg">
+           <h3>Appointment Selection</h3>
         </div>
+        <div class="form grid grid-cols-1 md:grid-cols-2 gap-4">
+                     <div>
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                 <div>
+                    <label for="time">Preferred Time</label>
+                    <input type="time" id="time" name="time">
+                </div>
+            </div>
+      </div>
+        </div>
+        <div class="booking-summary  border border-[var(--color-border)] bg-[var(--color-bg3)] rounded-md p-6">
+            <div class="form">
+                  <label for="doctor" >Select Practitioner</label>
+                    <select type="radio" id="doctor" name="doctor">
+                    <option class="text-[15px] text-[var(--color-b)] ">Choose a Doctor</option>
+                    <option class="text-[15px] text-[var(--color-b)] >Dr. James Wilson</option>
+                    <option class="text-[15px] text-[var(--color-b)] >Dr. Michael Aris</option>
+                </select> 
+                </div>
+        
     </div>
 </section>
     
