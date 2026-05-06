@@ -18,6 +18,9 @@
     --color-dark: #635E55;
     --color-darker:#162839;
     --color-b:#1B1C1D;
+    --color-embg:#FFDAD6;
+    --color-emergency:#BA1A1A;
+    --color-emtext:#93000A;
     --font-inter:'Inter';
 
 }
