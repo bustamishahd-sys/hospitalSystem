@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Departments | login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href=".\src\output.css" rel="stylesheet">
+</head>
+<body>
+   <main>
+    <section class="min-h-screen grid md:grid-cols-2">
+      <div class="hidden md:block p-12 bg-[var(--color-bg3)] border border-[var(--color-border)] flex flex-col justify-center">
+        <p class="text-[var(--color-primary)] font-bold text-xl ">
+        MedPrecise
+      </p>
+        <div class="px-12 py-30">
+ <img src="./src/photos/login/Clinical reliability illustration.webp" alt="clinical reliability"/>
+
+    <div class="mt-6">
+      <p class="text-5xl text-[var(--color-primary)] font-bold leading-15 mt-1">Your health, our priority</p>
+      <p class="text-[15px] text-[var(--color-dark)]">Clinical excellence through precision diagnostics and
+dedicated patient care pathways.</p>
+    </div>
+    </div>
+
+         
+    <p class="font-medium text-[var(--color-highlight)] text-[13px] pt-12">© 2024 MedPrecise Health. Clinical Excellence Guaranteed.</p>
+        
+      </div>
+        <div class="px-12 lg:px-0 bg-[var(--color-background)] w-full max-w-[440px] mx-auto flex items-center flex-col justify-center ">
+
+  <div class="mb-6 w-full">
+    <h6 class="text-[var(--color-primary)] mb-1">
+      Welcome back
+    </h6>
+
+    <p class="text-[15px] text-[var(--color-dark)]">
+      Access your clinical records and dashboard.
+    </p>
+  </div>
+
+  <form class="w-full">
+
+    <div class="form">
+      <label for="email">Email Address</label>
+
+      <input type="email" id="email" name="email"placeholder="dr.smith@medprecise.com" >
+    </div>
+
+    <div class="form">
+
+      <div class="flex justify-between items-center mb-2">
+        <label for="password">Password</label>
+
+        <a
+          href="#"
+          class="text-[13px] font-medium text-[var(--color-primary)]"
+        >
+          Forgot password?
+        </a>
+      </div>
+
+      <input type="password" id="password" name="password" placeholder="••••••••">
+    </div>
+    <div class="row  gap-2 mb-6">
+      <input type="checkbox">
+    <label class="text-[13px] text-[var(--color-muted)] font-medium"> Keep me logged in</label>
+    </div>
+    <button class=" w-full rounded-md bg-[var(--color-primary)] text-[var(--color-background)] text-[15px] font-semibold py-4">Sign In</button>
+
+  </form>
+ <div class="my-4 py-1 row gap-4 w-full">
+  <div class="bg-[var(--color-t3)] h-px flex-1 "></div>
+  <p class="text-[var(--color-t3)] text-xs">OR CONTINUE WITH</p>
+   <div class="bg-[var(--color-t3)] h-px flex-1"></div>
+ </div>
+ <button class=" w-full rounded-md bg-[var(--color-bg2)] text-[var(--color-t2)] text-[15px] font-semibold py-4">Google SSO</button>
+ <div class="my-12"><p class="text-[15px] font-semibold text-[var(--color-dark)]">Don't have a practitioner account?<span class="ml-1 text-[var(--color-primary)]">Apply here</span></p></div>
+</div>
+    </section>
+   </main> 
+</body>
+</html>
