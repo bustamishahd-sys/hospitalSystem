@@ -17,7 +17,6 @@
     --color-unavailable:#4A90E2;
     --color-light:#96A9BE;
     --color-dark: #635E55;
-    --color-darker:#162839;
     --color-b:#1B1C1D;
     --color-embg:#FFDAD6;
     --color-emergency:#BA1A1A;
@@ -88,13 +87,13 @@ h3{
     font-size: 1.125rem;
     line-height: 1.575rem;
     font-weight: 600;
-    color: #162839;
+    color: #2C3E50;
 }
 h4{
     font-size: 1.5rem;
     line-height: 1.95rem;
     font-weight: 600; 
-    color: #162839;
+    color: #2C3E50;
 }
 h5{
     font-size: 0.75rem;
@@ -105,7 +104,7 @@ h5{
 h6{
     font-size: 2rem;
     line-height: 2.5rem;
-    color: #162839;
+    color: #2C3E50;
     font-weight: 600;
 }
 .style{
@@ -229,7 +228,7 @@ width: 100%;
     font-size: 3rem;
     line-height: 3.6rem;
     font-weight: bold;
-    color: var(--color-darker);
+    color: #2C3E50;
 }
 .caption{
     font-size: 0.813rem;
@@ -335,4 +334,21 @@ width: 100%;
 }
 .form textarea{
      @apply border border-[var(--color-border)] px-2 py-2 rounded-md w-full bg-[var(--color-background)]
+}
+
+@utility lay{
+    @apply grid grid-cols-1 md:grid-cols-[256px_1fr] ;
+}
+
+.navbar{
+    grid-area: navbar;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    grid-area: footer;
 }
