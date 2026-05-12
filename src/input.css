@@ -336,19 +336,13 @@ width: 100%;
      @apply border border-[var(--color-border)] px-2 py-2 rounded-md w-full bg-[var(--color-background)]
 }
 
-@utility lay{
-    @apply grid grid-cols-1 md:grid-cols-[256px_1fr] ;
-}
+ .layout { display: grid;
+    grid-template-columns: 256px 1fr;
+    grid-template-areas:
+    "sidebar navbar"
+    "sidebar main"
+    "sidebar footer";
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+ }
 
-.navbar{
-    grid-area: navbar;
-}
-.sidebar{
-    grid-area: sidebar;
-}
-.main{
-    grid-area: main;
-}
-.footer{
-    grid-area: footer;
-}
