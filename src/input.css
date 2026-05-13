@@ -35,7 +35,7 @@
 
 }
 @utility nav-link {
-    @apply cursor-pointer hover:text-[var(--color-primary)] hover:scale-115 inline-block transition-all duration-200;
+    @apply cursor-pointer hover:text-[var(--color-primary)] hover:scale-105 inline-block transition-all duration-200;
 }
 @layer components {
     .sec{
@@ -298,7 +298,7 @@ width: 100%;
 .availability-card button:hover{
     transform: scale(0.9);
 }
-.info button{
+.info a{
     color: #FFFFFF;
     background-color: var(--color-primary);
     font-weight: 600;

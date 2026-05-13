@@ -14,7 +14,7 @@
            <div>
         <aside class="hidden md:flex bg-bg3  flex-col min-h-full relative">
         <div class="py-6 px-8">
-            <h3 class="!font-bold">MedPrecise</h3>
+        <a href="./index.html"> <h3 class="!font-bold">MedPrecise</h3></a>   
             <p class="text-xs text-muted mt-1">PATIENT PORTAL</p>
         </div>
         <div class=" py-4 flex flex-col gap-1 " >
@@ -43,11 +43,11 @@
         <div class="absolute bottom-0 border-t border-border w-full">
             <div class="row  gap-3 py-3 pl-6 nav-link">
                 <img src="./src/ICONS/SUPPORT.svg"/>
-                <p class="text-[13px] font-medium  text-muted tracking-[1.3px]">SUPPORT</p>
+                <a href="#" class="text-[13px] font-medium  text-muted tracking-[1.3px]">SUPPORT</a>
             </div>
             <div class="row  gap-3 py-3 pl-6 nav-link">
                 <img src="./src/ICONS/LOGOUT.svg"/>
-                <p class="text-[13px] font-medium  text-muted tracking-[1.3px]">LOGOUT</p>
+                <a href="./login.html" class="text-[13px] font-medium  text-muted tracking-[1.3px]">LOGOUT</a>
             </div>
 
         </div>
@@ -67,7 +67,7 @@
         <nav>
               <ul class=" row gap-2 md:gap-4">
                     <li>
-                        <a href="#"><img src="./src/ICONS/not.svg"></a>
+                        <a href="#" class="hover:scale-95 inline-flex transition-all duration-200"><img src="./src/ICONS/not.svg"></a>
                     </li>
                     <li >
                         <a href="#"><p class="bg-[var(--color-primary)] rounded-xl p-2 text-[var(--color-background)] text-xs font-bold">SK</p></a>
@@ -77,8 +77,8 @@
         </div>
         
         </header>
-        <main class="py-6 px-8">
-            <div class="py-8 grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-6">
+        <main class="py-6 ">
+            <div class="py-8 grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-6 px-8">
                 <div class="border border-border bg-bg3 rounded-md p-6">
                     <div class="flex justify-between">
                         <div>
@@ -114,7 +114,7 @@
                 <div class="bg-primary rounded-md p-6">
                    <div class="row justify-between pb-4">
                     <img src="./src/ICONS/next app.svg"/>
-                    <p class="nav-link text-background text-xs border border-[#fafaf880] rounded-md px-3 py-1">RESCHEDULE</p>
+                    <p class="hover:scale-95 inline-flex transition-all duration-200 text-background text-xs border border-[#fafaf880] rounded-md px-3 py-1">RESCHEDULE</p>
                    </div>
                    <div>
                     <p class="text-xs text-[#fafaf880]">NEXT APPOINTMENT</p>
@@ -133,17 +133,39 @@
                    </div>
                 </div>
             </div>
-            <div class="mt-16 grid grid-cols-1 lg:grid-cols-[2fr_1.5fr] gap-6">
-                <div>
-               <div class="flex justify-between">
+               
+            <div class=" border-t  border-border md:border-0 mt-16 grid grid-cols-1 lg:grid-cols-[2fr_1.5fr] gap-6 px-8">
+                <div >
+                    
+               <div class=" justify-between hidden md:flex">
                 <div>
                     <h3>Recent Records</h3>
                     <p class="text-xs text-muted">Your latest clinical documentation and lab results.</p>
                 </div>
                 <h5 class="flex items-end text-primary">VIEW ALL</h5>
                </div>
+            <div class=" border-border pt-3 row gap-16 md:hidden">
+                <div class="flex flex-col items-center gap-1 nav-link">
+                    <img src="./src/ICONS/Dashboard.svg"/>
+                    <p class="text-[10px] font-bold text-primary">HOME</p>
+                </div>
+                <div class="flex flex-col items-center gap-1 nav-link">
+                    <img src="./src/ICONS/Appointments.svg"/>
+                    <p class="text-[10px] font-bold text-muted">BOOK</p>
+                </div>
+               
+                <div class="flex flex-col items-center gap-1 nav-link">
+                    <img src="./src/ICONS/Medical Records.svg"/>
+                    <p class="text-[10px] font-bold text-muted">RECORDS</p>
+                </div>
+                <div class="flex flex-col items-center gap-1 nav-link">
+                    <img src="./src/ICONS/pro.svg"/>
+                    <p class="text-[10px] font-bold text-muted">PROFILE</p>
+                </div>
+
+               </div>
                <div class="border border-border bg-bg3 rounded-md mt-4">
-                <div class="text-muted text-xs tracking-[1.2px] font-semibold grid grid-cols-[3fr_1.5fr_1fr] pl-6 py-6 border-b border-border">
+                <div class="text-muted text-xs tracking-[1.2px] font-semibold grid grid-cols-[3fr_1.5fr_1fr] px-6 py-6 border-b border-border">
                     <p >DOCUMENT</p>
                     <p>DATE</p>
                     <p>ACTION</p>
@@ -170,7 +192,7 @@
                     <p class="text-[13] text-primary font-medium">Sep 28, 2023</p>
                     <img src="./src/ICONS/download.svg" class="nav-link"/>
                 </div>
-                  <div class="grid grid-cols-[3fr_1.5fr_1fr] pl-6 py-6 border-b border-border">
+                  <div class="grid grid-cols-[3fr_1.5fr_1fr] pl-6 py-6">
                     <div class="row gap-2">
                         <img src="./src/ICONS/Annual Wellness Summary.svg" class="h-5 w-5"/>
                         <div>
@@ -184,8 +206,7 @@
                </div>
                 </div>
                 <div>
-               <div >
-                <div>
+                     <div>
                     <h3>Active Prescriptions</h3>
                     <p class="text-xs text-muted">Managed medications and refill tracking.</p>
                 </div>
@@ -204,7 +225,7 @@
                     </div>
 
                 </div>
-                 <div class="border border-border bg-bg3 rounded-md mt-4 row justify-between p-4">
+                 <div class="border border-border bg-bg3 rounded-md mt-4 row justify-between p-4 opacity-80">
                     <div class="row gap-4"><div class="bg-bg2 py-3 px-3.25 w-fit rounded-md ">
                     <img src="./src/ICONS/Active Prescriptions.svg"/>
                     </div>
@@ -217,51 +238,87 @@
                       <p>NEEDS REFILL</p>
                     </div>
                     
-
                  </div>
+                
                 <div class="border-border bg-bg2 rounded-md py-3 w-full flex justify-center mt-4 cursor-pointer  hover:scale-95 transition-all duration-200">
                         <p class="text-[15px] text-primary font-semibold ">Request New Prescription</p>
 
                   </div>
-                
-        
-               </div>
                 </div>
             </div>
-
-        </main>
-       <footer >
-       <section class="px-10 flex items-center justify-center bg-[var(--color-bg3)] border-t  border-[var(--color-border)]">
-     <div class="footer container mx-auto py-12">
-            <div class="footer-container grid grid-cols-1 md:grid-cols-4 gap-8  ">
-                <div>
-                    <h2 class="font-bold text-lg text-[var(--color-primary)] mb-4">MedPrecise</h2>
-                    <p class="style">© 2024 MEDPRECISE HEALTH.<br>CLINICAL EXCELLENCE GUARANTEED.</p>
+            <div class="mt-16 px-8">
+             <h3>Visit History</h3>
+             <div class="mt-6 flex gap-8">
+                <div class="w-0.5 bg-border">
+                   
                 </div>
                 <div>
-                    <h5 class="text-[var(--color-primary)] mb-4">LEGAL</h5>
+                     <div class="grid grid-cols-[1fr_2.5fr] gap-4 ">
+                <div class="relative">
+                      <div class="w-2 h-2 bg-primary rounded-full absolute -left-8.75 top-0.5"></div>
+
+                    
+                    <p class="text-primary text-[13px] font-bold">Oct 05, 2023</p>
+                    <p class="text-xs text-muted">14:20 PM</p>
+                </div>
+                <div class="border border-border bg-bg3 rounded-md p-4">
+                 <div class="row">
+                    <div>
+                        <p class="text-[13] text-primary font-medium">General Practitioner Follow-up</p>
+                    <p class="text-[15px] text-muted">Consultation regarding blood pressure management. Patient reported improved sleep quality.</p>
+                    </div>
+                    <img src="./src/photos/dr.webp" class="rounded-xl"/>
+                 </div>
+                 <div class="row gap-4 pt-4">
+                    <a href="#" class="hover:scale-95 inline-flex transition-all duration-200 row gap-1"><img src="./src/ICONS/BP_Log_Oct.pdf.svg"/> <p class="text-[13px] text-primary font-medium">BP_Log_Oct.pdf</p></a>
+                     <a href="#" class="hover:scale-95 inline-flex transition-all duration-200 row gap-1"><img src="./src/ICONS/Invoice.svg"/> <p class="text-[13px] text-primary font-medium">Invoice_#9920</p></a>
+                    
+                 </div>
+                 
+                </div>
+            
+               </div>
+               <div class="grid grid-cols-[1fr_2.5fr] gap-4 mt-6 "> 
+                  <div class="opacity-80 relative">
+                      <div class="w-2 h-2 bg-primary  rounded-full absolute -left-8.75 top-0.5"></div>
+                    <p class="text-primary text-[13px] font-bold">Sep 12, 2023</p>
+                    <p class="text-xs text-muted">09:00 AM</p>
+                </div>
+                <div class="border border-border bg-bg3 rounded-md p-4 opacity-60">
+                    <div>
+                        <p class="text-[13] text-primary font-medium">Laboratory Sample Collection</p>
+                    <p class="text-[15px] text-muted">Blood and urine samples collected for annual wellness panel.</p>
+                    </div>
+                </div>
+               </div>
+                </div>
+              
+                
+
+
+             </div>
+            </div> 
+
+        </main>
+       <footer  class="mt-16">
+       <section class="px-10 flex items-center justify-center bg-[var(--color-bg3)] border-t  border-[var(--color-border)]">
+     <div class="footer container mx-auto py-12">
+            <div class="footer-container grid grid-cols-1 md:grid-cols-3 gap-8  ">
+                <div>
+                    <h2 class="font-bold text-lg text-[var(--color-primary)] mb-4">MedPrecise</h2>
+                    <p class="style">© 2024 MEDPRECISE HEALTH.CLINICAL EXCELLENCE GUARANTEED.</p>
+                </div>
+                <div>
                     <ul>
                         <li><a href="#"class="style">PRIVACY POLICY</a></li>
                         <li class="my-4 style"><a href="#">TERMS OF SERVICE</a></li>
-                        <li><a href="#"class="style">PATIENT RIGHTS</a></li>
                     </ul>
                 </div>
-               
                 <div>
-                    <h5 class="text-[var(--color-primary)] mb-4">SUPPORT</h5>
                     <ul>
                         <li><a href="#"class="style">CONTACT SUPPORT</a></li>
-                        <li class="my-4 style"><a href="#">FAQS</a></li>
-                        <li><a href="#"class="style">INSURANCE</a></li>
-                    </ul>
-                </div>
-                  <div>
-                    <h5 class="text-[var(--color-primary)] mb-4">SOCIAL</h5>
-                    <ul class="row gap-4" >
-                        <li><img src="./src/ICONS/SOCIAL1.svg"/></li>
-                        <li><img src="./src/ICONS/SOCIAL2.svg"/></li>
-                        <li><img src="./src/ICONS/SOCIAL3.svg"/></li>
-                        
+                        <li class="my-4 style"><a href="#">CONTACT SUPPORT</a></li>
+                      
                     </ul>
                 </div>
             </div>
