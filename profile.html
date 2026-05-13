@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Departments | Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href=".\src\output.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container mx-auto row justify-between py-4.5 px-8 relative" >
+            <div class="md:hidden">
+                <input type="checkbox" id="menu" class="hidden peer">
+             <div class="flex justify-between items-center p-4">
+                <label for="menu" class="cursor-pointer"><img src="./src/ICONS/Menu.svg" alt="menu"></label>
+             </div>
+             <div class="hidden peer-checked:flex bg-gray-100  absolute top-full left-8 flex flex-col px-4" >
+                <a href="./index.html" class="text-sm text-[var(--color-muted)] py-2">Home</a>
+                 <a href="./doctors.html" class="text-sm text-[var(--color-muted)] py-2">Doctors</a>
+                 <a href="./clinics.html" class="text-sm text-[var(--color-muted)] py-2">Clinics</a>
+                  <a href="./book.html" class="text-sm text-[var(--color-muted)] py-2">Book</a>
+                   <a href="./about.html" class="text-sm text-[var(--color-muted)] py-2">About</a>
+                   <a href="./contact.html" class="text-sm text-[var(--color-muted)] py-2">Contact</a>
+             </div>
+            </div>
+            <nav class="row justify-between gap-12">
+                <a href="./index.html" class="text-xl font-bold text-[var(--color-primary)]">MedPrecise</a>
+                <ul class="row justify-between gap-6 text-sm text-[var(--color-muted)] hidden  md:flex">
+                    <li>
+                        <a href="./index.html" class="nav-link ">Home</a>
+                    </li>
+                    <li>
+                        <a href="./doctors.html" class="nav-link">Doctors</a>
+                    </li>
+                    <li>
+                        <a href="./clinics.html" class="nav-link">Clinics</a>
+                    </li>
+                    <li>
+                        <a href="./book.html" class="nav-link">Book</a>
+                    </li>
+                    <li>
+                        <a href="./about.html" class="nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="icons">
+                <ul class="row justify-between gap-4">
+                    <li>
+                        <a href="#"><img src="./src/ICONS/search.svg"></a>
+                    </li>
+                    <li class="hidden md:block">
+                        <a href="./login.html"><img src="./src/ICONS/pro.svg"></a>
+                    </li>
+                    <li class="hidden md:block">
+                        <a href="#"><img src="./src/ICONS/not.svg"></a>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
+    </header>
+    <div class="grid grid-cols-1 md:grid-cols-[256px_1fr] ">
+         
+        <aside class="hidden md:flex bg-bg3  flex-col min-h-full relative">
+              <div class="py-6 px-8">
+        <a href="./index.html"> <h3 class="!font-bold">PATIENT PORTAL</h3></a>   
+            <p class="text-xs text-muted mt-1">CLINICAL ACCESS</p>
+        </div>
+        <div class="mt-4 py-4 flex flex-col gap-1 " >
+          <a href="./dashboard.html" class="row gap-3 pl-6 py-3 nav-link">
+            <img src="./src/ICONS/Dashboard.svg"/>
+            <p class="text-[13px] font-medium  text-primary">Dashboard</p>
+        </a>
+        <div class="row gap-3 pl-6 py-3 nav-link">
+            <img src="./src/ICONS/Appointments.svg"/>
+            <p class="text-[13px] font-medium  text-muted">Appointments</p>
+        </div>
+        <div class="row gap-3 pl-6 py-3 nav-link">
+            <img src="./src/ICONS/Medical Records.svg"/>
+            <p class="text-[13px] font-medium  text-muted">Medical Records</p>
+        </div>
+        <div class="row gap-3 pl-6 py-3 nav-link">
+            <img src="./src/ICONS/Billing.svg"/>
+            <p class="text-[13px] font-medium  text-muted">Billing</p>
+        </div>
+        <div class="relative row gap-3 pl-6 py-3 nav-link bg-bg2">
+            <div class="absolute left-0 top-0 h-full w-1 bg-primary"></div>
+
+            <img src="./src/ICONS/Settings.svg"/>
+            <p class="text-[13px] font-medium  text-primary">Settings</p>
+        </div>
+
+        <div class="absolute bottom-0 border-t border-border w-full">
+            <div class="row  gap-3 py-3 pl-6 nav-link">
+                <img src="./src/ICONS/SUPPORT.svg"/>
+                <a href="#" class="text-[13px] font-medium  text-muted tracking-[1.3px]">SUPPORT</a>
+            </div>
+            <div class="row  gap-3 py-3 pl-6 nav-link">
+                <img src="./src/ICONS/LOGOUT.svg"/>
+                <a href="./login.html" class="text-[13px] font-medium  text-muted tracking-[1.3px]">LOGOUT</a>
+            </div>
+
+        </div>
+        
+        </div>
+        
+        </aside>
+         <main class="py-10 px-16 mb-12">
+           <div class="bg-bg3 border border-border rounded-md p-6 grid grid-cols-1 md:grid-cols-[1fr_3fr_1fr] gap-6 items-center">
+             <img src="./src/photos/Ahmed Mansour.webp" alt="ahmed photo" class="rounded-lg"/>
+             <div class="flex flex-col gap-2 ">
+                <h6>Ahmed Mansour</h6>
+                <div class="row gap-4">
+                    <p class="bg-primary rounded-2xl text-white font-semibold text-xs py-1 px-3 w-fit ">ID: MP-882910</p>
+                    <p class="text-dark font-medium">Age: 34</p>
+                    <p class="text-dark font-medium">Status: Active</p>
+                </div>
+               
+             </div>
+               <button class="bg-primary py-3 px-4 rounded-lg row gap-2 w-fit h-fit"><img src="./src/ICONS/Edit Profile.svg"/> <p class="text-[15px] text-white font-semibold">Edit Profile</p></button>
+           </div>
+           <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4"> 
+           <div class="bg-bg3 border border-border rounded-md p-6">
+            <div class="row gap-2 border-b border-border pb-2 mb-4">
+                <img src="./src/ICONS/Personal Information.svg"/>
+            <h3>Personal Information</h3>
+            </div>
+            <div class="flex flex-col gap-3.75">
+                <div>
+                <p class="text-[13px] font-medium text-dark mb-1">Email Address</p>
+                <p class="text-[15px] text-primary">a.mansour@email.com</p>
+            </div>
+            <div>
+                <p class="text-[13px] font-medium text-dark mb-1">Phone Number</p>
+                <p class="text-[15px] text-primary">+1 (555) 012-3456</p>
+            </div>
+             <div>
+                <p class="text-[13px] font-medium text-dark mb-1">Residential Address</p>
+                <p class="text-[15px] text-primary">742 Evergreen Terrace, Springfield</p>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                 <p class="text-[13px] font-medium text-dark mb-1">Date of Birth</p>
+                <p class="text-[15px] text-primary">Jan 12, 1989</p>
+                </div>
+                <div>
+                    <p class="text-[13px] font-medium text-dark mb-1">Gender</p>
+                <p class="text-[15px] text-primary">Male</p
+                </div>
+            </div>
+           </div>
+            </div> 
+           </div>
+             <div class="bg-bg3 border border-border rounded-md p-6">
+            <div class="row gap-2 border-b border-border pb-2 mb-4">
+                <img src="./src/ICONS/Medical Basics.svg"/>
+            <h3>Medical Basics</h3>
+            </div>
+            <div class="flex flex-col gap-3.75">
+                <div>
+                <p class="text-[13px] font-medium text-dark mb-1">Blood Type</p>
+                <p class="text-[14px] text-white bg-emergency rounded-md px-3 py-2 w-fit">O Positive (O+)</p>
+            </div>
+            <div>
+                <p class="text-[13px] font-medium text-dark mb-1">Allergies</p>
+                <div class="row gap-2">
+                     <p class="text-xs font-medium text-primary bg-bg2 border-border border rounded-md px-3 py-1 w-fit">Penicillin</p>
+                      <p class="text-xs font-medium text-primary bg-bg2 border-border border rounded-md px-3 py-1 w-fit">Peanuts</p>
+                </div>
+                
+            </div>
+             <div>
+                <p class="text-[13px] font-medium text-dark mb-1">Chronic Conditions</p>
+                <p class="text-[15px] text-primary">Mild Asthma</p>
+            </div>
+            </div> 
+           </div>
+           <div class="bg-bg3 border border-border rounded-md p-6">
+            <div class="row gap-2 border-b border-border pb-2 mb-4">
+                <img src="./src/ICONS/Emergency Contact.svg"/>
+            <h3>Emergency Contact</h3>
+            </div>
+            <div class="flex flex-col gap-3.75">
+                <div>
+                <p class="text-[13px] font-medium text-dark mb-1">Primary Contact</p>
+                <p class="text-[15px] text-primary font-semibold">Layla Mansour</p>
+                <p class="text-xs text-dark italic">Spouse</p>
+            </div>
+            <div>
+                <p class="text-[13px] font-medium text-dark mb-1">Contact Number</p>
+                <p class="text-[15px] text-primary">+1 (555) 012-3488</p>
+            </div>
+            </div> 
+           </div>
+             <div class="bg-bg3 border border-border rounded-md p-6">
+            <div class="row gap-2 border-b border-border pb-2 mb-4">
+                <img src="./src/ICONS/Insurance Details.svg"/>
+            <h3>Insurance Details</h3>
+            </div>
+            <div class="flex flex-col gap-3.75">
+                <div>
+                <p class="text-[13px] font-medium text-dark mb-1">Provider</p>
+                <p class="text-[15px] text-primary font-semibold">BlueShield Premium</p>
+            </div>
+            <div>
+                <p class="text-[13px] font-medium text-dark mb-1">Policy Number</p>
+                <p class="text-[15px] text-primary">#BS-991200344</p>
+            </div>
+            <div>
+                <p class="text-[13px] font-medium text-dark mb-1">Expiration Date</p>
+                <p class="text-[15px] text-primary">Dec 2024</p>
+            </div>
+            </div> 
+           </div>
+        </div>
+         <div class="mt-4 bg-bg3 border border-border rounded-md p-6">
+            <div class="row gap-2 border-b border-border pb-2 mb-4">
+                <img src="./src/ICONS/Account Settings.svg"/>
+            <h3>Account Settings</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div>
+                    <p class="text-primary text-[13px] font-bold mb-4">PASSWORD MANAGEMENT</p>
+                    <div class="row gap-2">
+                        <img src="./src/ICONS/Change Password.svg"/>
+                        <p class="text-primary text-[14px] font-medium">Change Password</p>
+                    </div>
+                </div>
+                  <div>
+                    <p class="text-primary text-[13px] font-bold mb-4">NOTIFICATION PREFERENCES</p>
+                    <div class="flex flex-col gap-2">
+                        <label class="row gap-3"><input type="checkbox" class="accent-primary w-4 h-4" checked><p class="text-[14px] text-primary">Email Notifications</p></label>
+                           <label class="row gap-3"><input type="checkbox" class="accent-primary w-4 h-4" checked><p class="text-[14px] text-primary">SMS Alerts</p></label>
+                    </div>
+                </div>
+                 <div>
+                    <p class="text-primary text-[13px] font-bold mb-4">PRIVACY SETTINGS</p>
+                    <div class="flex flex-col gap-2">
+                        <label class="row gap-3"><input type="radio" class="accent-primary w-4 h-4" checked><p class="text-[14px] text-primary">Full clinical data sharing</p></label>
+                           <label class="row gap-3"><input type="radio" class="accent-primary w-4 h-4"><p class="text-[14px] text-primary">Limited (Anonymized) only</p></label>
+                    </div>
+                </div>
+            </div>
+            
+           </div>
+          <nav class="fixed bottom-0 left-0 w-full bg-bg3/85 border-t border-border shadow-md px-6 md:hidden">
+                <div class=" border-border pt-3 row gap-16 ">
+                <a href="./dashboard.html" class="flex flex-col items-center gap-1 nav-link">
+                    <img src="./src/ICONS/Dashboard.svg"/>
+                    <p class="text-[10px] font-bold text-muted">HOME</p>
+                </a>
+                <a class="flex flex-col items-center gap-1 nav-link">
+                    <img src="./src/ICONS/Appointments.svg"/>
+                    <p class="text-[10px] font-bold text-muted">BOOK</p>
+                </a>
+               
+                <a class="flex flex-col items-center gap-1 nav-link">
+                    <img src="./src/ICONS/Medical Records.svg"/>
+                    <p class="text-[10px] font-bold text-muted">RECORDS</p>
+                </a>
+                <a href="./profile.html" class="flex flex-col items-center gap-1 nav-link">
+                    <img src="./src/ICONS/pro.svg"/>
+                    <p class="text-[10px] font-bold text-primary">PROFILE</p>
+                </a>
+
+               </div>
+          </nav>  
+        </main>
+
+    
+    </div>
+</body>
+</html>

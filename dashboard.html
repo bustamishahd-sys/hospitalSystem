@@ -10,14 +10,66 @@
   <link href=".\src\output.css" rel="stylesheet">
 </head>
 <body>
-    <div class="grid grid-cols-1 md:grid-cols-[256px_1fr] ">
-           <div>
-        <aside class="hidden md:flex bg-bg3  flex-col min-h-full relative">
-        <div class="py-6 px-8">
-        <a href="./index.html"> <h3 class="!font-bold">MedPrecise</h3></a>   
-            <p class="text-xs text-muted mt-1">PATIENT PORTAL</p>
+     <header>
+        <div class="container mx-auto row justify-between py-4.5 px-8 relative" >
+            <div class="md:hidden">
+                <input type="checkbox" id="menu" class="hidden peer">
+             <div class="flex justify-between items-center p-4">
+                <label for="menu" class="cursor-pointer"><img src="./src/ICONS/Menu.svg" alt="menu"></label>
+             </div>
+             <div class="hidden peer-checked:flex bg-gray-100  absolute top-full left-8 flex flex-col px-4" >
+                <a href="./index.html" class="text-sm text-[var(--color-muted)] py-2">Home</a>
+                 <a href="./doctors.html" class="text-sm text-[var(--color-muted)] py-2">Doctors</a>
+                 <a href="./clinics.html" class="text-sm text-[var(--color-muted)] py-2">Clinics</a>
+                  <a href="./book.html" class="text-sm text-[var(--color-muted)] py-2">Book</a>
+                   <a href="./about.html" class="text-sm text-[var(--color-muted)] py-2">About</a>
+                   <a href="./contact.html" class="text-sm text-[var(--color-muted)] py-2">Contact</a>
+             </div>
+            </div>
+            <nav class="row justify-between gap-12">
+                <a href="./index.html" class="text-xl font-bold text-[var(--color-primary)]">MedPrecise</a>
+                <ul class="row justify-between gap-6 text-sm text-[var(--color-muted)] hidden  md:flex">
+                    <li>
+                        <a href="./index.html" class="nav-link ">Home</a>
+                    </li>
+                    <li>
+                        <a href="./doctors.html" class="nav-link">Doctors</a>
+                    </li>
+                    <li>
+                        <a href="./clinics.html" class="nav-link">Clinics</a>
+                    </li>
+                    <li>
+                        <a href="./book.html" class="nav-link">Book</a>
+                    </li>
+                    <li>
+                        <a href="./about.html" class="nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="icons">
+                <ul class="row justify-between gap-4">
+                    <li>
+                        <a href="#"><img src="./src/ICONS/search.svg"></a>
+                    </li>
+                    <li class="hidden md:block">
+                        <a href="./login.html"><img src="./src/ICONS/pro.svg"></a>
+                    </li>
+                    <li class="hidden md:block">
+                        <a href="#"><img src="./src/ICONS/not.svg"></a>
+                    </li>
+                </ul>
+
+            </nav>
+
         </div>
-        <div class=" py-4 flex flex-col gap-1 " >
+    </header>
+    <div class="grid grid-cols-1 md:grid-cols-[256px_1fr] ">
+         
+        <aside class="hidden md:flex bg-bg3  flex-col min-h-full relative">
+        <div class="mt-4 py-4 flex flex-col gap-1 " >
           <div class="relative row gap-3 pl-6 py-3 nav-link bg-bg2">
             <div class="absolute left-0 top-0 h-full w-1 bg-primary"></div>
 
@@ -38,7 +90,7 @@
         </div>
         <div class="row gap-3 pl-6 py-3 nav-link">
             <img src="./src/ICONS/Settings.svg"/>
-            <p class="text-[13px] font-medium  text-muted">Settings</p>
+            <a href="./profile.html" class="text-[13px] font-medium  text-muted">Settings</a>
         </div>
         <div class="absolute bottom-0 border-t border-border w-full">
             <div class="row  gap-3 py-3 pl-6 nav-link">
@@ -55,29 +107,10 @@
         </div>
         
         </aside>
-    </div>
-        <div>
-        <header class="row justify-between py-[13.5px] px-8">
-        <h4 >Welcome back, Sarah</h4>
-        <div class="row gap-6 ">
-            <div class="hidden md:block relative">
-            <input class="w-full  rounded-md bg-[var(--color-bg2)] py-1.5 pl-12"  type="search" placeholder="Search records...">
-         <img src="./src/ICONS/search.svg" class="absolute top-1/10 translate-y-1/4 left-4"/>
-        </div>
-        <nav>
-              <ul class=" row gap-2 md:gap-4">
-                    <li>
-                        <a href="#" class="hover:scale-95 inline-flex transition-all duration-200"><img src="./src/ICONS/not.svg"></a>
-                    </li>
-                    <li >
-                        <a href="#"><p class="bg-[var(--color-primary)] rounded-xl p-2 text-[var(--color-background)] text-xs font-bold">SK</p></a>
-                    </li>
-                    </ul>
-        </nav>
-        </div>
-        
-        </header>
         <main class="py-6 ">
+            <div class="py-8 px-8">
+                <h6>Welcome back, Ahmed</h6>
+            </div>
             <div class="py-8 grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-6 px-8">
                 <div class="border border-border bg-bg3 rounded-md p-6">
                     <div class="flex justify-between">
@@ -144,26 +177,7 @@
                 </div>
                 <h5 class="flex items-end text-primary">VIEW ALL</h5>
                </div>
-            <div class=" border-border pt-3 row gap-16 md:hidden">
-                <div class="flex flex-col items-center gap-1 nav-link">
-                    <img src="./src/ICONS/Dashboard.svg"/>
-                    <p class="text-[10px] font-bold text-primary">HOME</p>
-                </div>
-                <div class="flex flex-col items-center gap-1 nav-link">
-                    <img src="./src/ICONS/Appointments.svg"/>
-                    <p class="text-[10px] font-bold text-muted">BOOK</p>
-                </div>
-               
-                <div class="flex flex-col items-center gap-1 nav-link">
-                    <img src="./src/ICONS/Medical Records.svg"/>
-                    <p class="text-[10px] font-bold text-muted">RECORDS</p>
-                </div>
-                <div class="flex flex-col items-center gap-1 nav-link">
-                    <img src="./src/ICONS/pro.svg"/>
-                    <p class="text-[10px] font-bold text-muted">PROFILE</p>
-                </div>
-
-               </div>
+        
                <div class="border border-border bg-bg3 rounded-md mt-4">
                 <div class="text-muted text-xs tracking-[1.2px] font-semibold grid grid-cols-[3fr_1.5fr_1fr] px-6 py-6 border-b border-border">
                     <p >DOCUMENT</p>
@@ -246,7 +260,7 @@
                   </div>
                 </div>
             </div>
-            <div class="mt-16 px-8">
+            <div class="my-16 px-8">
              <h3>Visit History</h3>
              <div class="mt-6 flex gap-8">
                 <div class="w-0.5 bg-border">
@@ -298,38 +312,30 @@
 
              </div>
             </div> 
+          <nav class="fixed bottom-0 left-0 w-full bg-bg3/85 border-t border-border shadow-md px-6 md:hidden">
+                <div class=" border-border pt-3 row gap-16 ">
+                <a class="flex flex-col items-center gap-1 nav-link">
+                    <img src="./src/ICONS/Dashboard.svg"/>
+                    <p class="text-[10px] font-bold text-primary">HOME</p>
+                </a>
+                <a class="flex flex-col items-center gap-1 nav-link">
+                    <img src="./src/ICONS/Appointments.svg"/>
+                    <p class="text-[10px] font-bold text-muted">BOOK</p>
+                </a>
+               
+                <a class="flex flex-col items-center gap-1 nav-link">
+                    <img src="./src/ICONS/Medical Records.svg"/>
+                    <p class="text-[10px] font-bold text-muted">RECORDS</p>
+                </a>
+                <a href="./profile.html" class="flex flex-col items-center gap-1 nav-link">
+                    <img src="./src/ICONS/pro.svg"/>
+                    <p class="text-[10px] font-bold text-muted">PROFILE</p>
+                </a>
 
+               </div>
+          </nav>
         </main>
-       <footer  class="mt-16">
-       <section class="px-10 flex items-center justify-center bg-[var(--color-bg3)] border-t  border-[var(--color-border)]">
-     <div class="footer container mx-auto py-12">
-            <div class="footer-container grid grid-cols-1 md:grid-cols-3 gap-8  ">
-                <div>
-                    <h2 class="font-bold text-lg text-[var(--color-primary)] mb-4">MedPrecise</h2>
-                    <p class="style">© 2024 MEDPRECISE HEALTH.CLINICAL EXCELLENCE GUARANTEED.</p>
-                </div>
-                <div>
-                    <ul>
-                        <li><a href="#"class="style">PRIVACY POLICY</a></li>
-                        <li class="my-4 style"><a href="#">TERMS OF SERVICE</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li><a href="#"class="style">CONTACT SUPPORT</a></li>
-                        <li class="my-4 style"><a href="#">CONTACT SUPPORT</a></li>
-                      
-                    </ul>
-                </div>
-            </div>
-           
-        </div>
-       </section>
-    </footer>
-    </div>
- 
-        
-       
+    
     </div>
 </body>
 </html>
