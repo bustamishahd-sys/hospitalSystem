@@ -204,7 +204,6 @@ width: 100%;
     color: #FFFFFF;
     background-color: var(--color-primary);
     font-weight: bold;
-    padding: 12PX 68.86PX;
     border-radius: 8PX;
 }
 .footer-container button:hover {
@@ -352,4 +351,7 @@ width: 100%;
 .no-scrollbar {
     -ms-overflow-style: none;  
     scrollbar-width: none;     
+}
+summary::-webkit-details-marker {
+  display: none;
 }

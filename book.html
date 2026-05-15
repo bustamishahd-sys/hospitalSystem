@@ -19,17 +19,17 @@
                 <label for="menu" class="cursor-pointer"><img src="./src/ICONS/Menu.svg" alt="menu"></label>
              </div>
              <div class="hidden peer-checked:flex bg-gray-100  absolute top-full left-8 flex flex-col px-4" >
-                <a href="./index.html" class="text-sm text-[var(--color-muted)] py-2">Home</a>
-                 <a href="./doctors.html" class="text-sm text-[var(--color-muted)] py-2">Doctors</a>
-                 <a href="./clinics.html" class="text-sm text-[var(--color-muted)] py-2">Clinics</a>
-                  <a href="./book.html" class="text-sm text-[var(--color-muted)] py-2">Book</a>
-                   <a href="./about.html" class="text-sm text-[var(--color-muted)] py-2">About</a>
-                   <a href="./contact.html" class="text-sm text-[var(--color-muted)] py-2">Contact</a>
+                <a href="./index.html" class="text-sm text-muted py-2">Home</a>
+                 <a href="./doctors.html" class="text-sm text-muted py-2">Doctors</a>
+                 <a href="./clinics.html" class="text-sm text-muted py-2">Clinics</a>
+                  <a href="./book.html" class="text-sm text-muted py-2">Book</a>
+                   <a href="./about.html" class="text-sm text-muted py-2">About</a>
+                   <a href="./contact.html" class="text-sm text-muted py-2">Contact</a>
              </div>
             </div>
             <nav class="row justify-between gap-12">
-                <a href="./index.html" class="text-xl font-bold text-[var(--color-primary)]">MedPrecise</a>
-                <ul class="row justify-between gap-6 text-sm text-[var(--color-muted)] hidden  md:flex">
+                <a href="./index.html" class="text-xl font-bold text-primary">MedPrecise</a>
+                <ul class="row justify-between gap-6 text-sm text-muted hidden  md:flex">
                     <li>
                         <a href="./index.html" class="nav-link">Home</a>
                     </li>
@@ -52,10 +52,10 @@
             </nav>
             <nav class="icons">
                 <ul class="row justify-between gap-4">
-                    <li>
+                    <li class="hidden md:block">
                         <a href="#"><img src="./src/ICONS/search.svg"></a>
                     </li>
-                    <li class="hidden md:block">
+                    <li >
                         <a href="./login.html"><img src="./src/ICONS/pro.svg"></a>
                     </li>
                     <li class="hidden md:block">
@@ -70,15 +70,15 @@
     <main class="pb-16">
         <section class="px-8 2xl:px-0  flex items-center justify-start">
     <div class="container  py-12 flex flex-col gap-1 max-w-2xl ">
-<p class="text-5xl font-bold text-[var(--color-primary)]">Checkout</p>
-<p class="text-[15px] text-[var(--color-dark)]">Confirm your appointment details and patient information to secure your slot with MedPrecise
+<p class="text-5xl font-bold text-primary">Checkout</p>
+<p class="text-[15px] text-dark">Confirm your appointment details and patient information to secure your slot with MedPrecise
 specialists.</p>
     </div>
 </section>
     <section class="px-8">
     <div class="container grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-12 items-start">
         <div class="information flex flex-col gap-6">
-      <div class="Contact-Details border border-[var(--color-border)] bg-[var(--color-bg3)] rounded-md p-6">
+      <div class="Contact-Details border border-border bg-bg3 rounded-md p-6">
      <div class="row gap-2 mb-4">
             <img src="./src/ICONS/Contact Details.svg"/>
            <h3>Contact Details</h3>
@@ -98,7 +98,7 @@ specialists.</p>
                     <input type="tel" id="phone" name="Phone Number" placeholder="+1 (555) 000-0000">   
                 </div>
       </div>
-      <div class="Patient-Info border border-[var(--color-border)] bg-[var(--color-bg3)] rounded-md p-6">
+      <div class="Patient-Info border border-border bg-bg3 rounded-md p-6">
         <div class="row gap-2 mb-4">
        <img src="./src/ICONS/Patient Info.svg">
            <h3>Patient Info</h3>
@@ -113,8 +113,8 @@ specialists.</p>
         <label for="Gender">Gender</label>
 
    <select id="Gender" name="Gender">
-    <option class="text-[15px] text-[var(--color-b)]">Male</option>
-    <option class="text-[15px] text-[var(--color-b)]">Female</option>
+    <option class="text-[15px] text-b">Male</option>
+    <option class="text-[15px] text-b">Female</option>
      </select>
                 </div>
             </div>
@@ -126,7 +126,7 @@ specialists.</p>
            
 
       </div>
-    <div class="Appointment-Selection border border-[var(--color-border)] bg-[var(--color-bg3)] rounded-md p-6">
+    <div class="Appointment-Selection border border-border bg-bg3 rounded-md p-6">
 <div class="row gap-2 mb-4">
        <img src="./src/ICONS/ap selection.svg">
            <h3>Appointment Selection</h3>
@@ -143,44 +143,44 @@ specialists.</p>
             </div>
     </div>  
         </div>
-        <div class="booking-summary  border border-[var(--color-border)] bg-[var(--color-bg3)] rounded-md p-6">
+        <div class="booking-summary  border border-border bg-bg3 rounded-md p-6">
      <div class="form mb-6">
     <label for="doctor">Select Practitioner</label>
 
     <select id="doctor" name="doctor">
-        <option class="text-[15px] text-[var(--color-b)]">
+        <option class="text-[15px] text-b">
             Choose a Doctor
         </option>
 
-        <option class="text-[15px] text-[var(--color-b)]">
+        <option class="text-[15px] text-b">
             Dr. James Wilson
         </option>
 
-        <option class="text-[15px] text-[var(--color-b)]">
+        <option class="text-[15px] text-b">
             Dr. Michael Aris
         </option>
     </select>
 </div>
-   <div class="mb-6 border border-[var(--color-border)] bg-[var(--color-bg2)] rounded-md p-12 flex items-center justify-center flex-col">
+   <div class="mb-6 border border-border bg-bg2 rounded-md p-12 flex items-center justify-center flex-col">
           <img src="./src/ICONS/no select.svg" class=""/>
-          <p class="text-[15px] text-[var(--color-muted)]">No doctor selected yet</p>
+          <p class="text-[15px] text-muted">No doctor selected yet</p>
         </div>
-          <div class="border-y py-6 border-[var(--color-border)] ">
+          <div class="border-y py-6 border-border ">
         <div class="row justify-between mb-4"> 
-            <p class="text-[15px] text-[var(--color-muted)]">Consultation Fee</p>
-            <div class="w-4 h-[1.2px] bg-[var(--color-muted)]"></div>
+            <p class="text-[15px] text-muted">Consultation Fee</p>
+            <div class="w-4 h-[1.2px] bg-muted"></div>
         </div>
         <div class="row justify-between"> 
-            <p class="text-[15px] text-[var(--color-muted)]">Service Tax</p>
-            <div class="w-4 h-[1.2px] bg-[var(--color-muted)]"></div>
+            <p class="text-[15px] text-muted">Service Tax</p>
+            <div class="w-4 h-[1.2px] bg-muted"></div>
         </div>
         </div>
         <div class="row justify-between py-6">
-            <p class=" text-[var(--color-primary)]">Total Payment</p>
-             <div class="w-4 h-[1.2px] bg-[var(--color-primary)]"></div>
+            <p class=" text-primary">Total Payment</p>
+             <div class="w-4 h-[1.2px] bg-primary"></div>
         </div>
         <div>
-            <button class=" w-full rounded-md bg-[var(--color-primary)] text-[var(--color-background)] text-[15px] font-semibold py-4">Confirm Appointment</button>
+            <button class=" w-full rounded-md bg-primary text-background text-[15px] font-semibold py-4">Confirm Appointment</button>
         </div>
         </div>
     </div>
@@ -188,15 +188,15 @@ specialists.</p>
 
     </main>
     <footer class="pt-16">
-       <section class="px-10 flex items-center justify-center bg-[var(--color-bg3)] border-t  border-[var(--color-border)]">
+       <section class="px-10 flex items-center justify-center bg-bg3 border-t  border-border">
      <div class="footer container mx-auto py-12">
             <div class="footer-container grid grid-cols-1 md:grid-cols-4 gap-8  ">
                 <div>
-                    <h2 class="font-bold text-lg text-[var(--color-primary)] mb-4">MedPrecise</h2>
+                    <h2 class="font-bold text-lg text-primary mb-4">MedPrecise</h2>
                     <p class="style">© 2024 MEDPRECISE HEALTH.<br>CLINICAL EXCELLENCE GUARANTEED.</p>
                 </div>
                 <div>
-                    <h5 class="text-[var(--color-primary)] mb-4">LEGAL</h5>
+                    <h5 class="text-primary mb-4">LEGAL</h5>
                     <ul>
                         <li><a href="#"class="style">PRIVACY POLICY</a></li>
                         <li class="my-4 style"><a href="#">TERMS OF SERVICE</a></li>
@@ -205,7 +205,7 @@ specialists.</p>
                 </div>
                
                 <div>
-                    <h5 class="text-[var(--color-primary)] mb-4">SUPPORT</h5>
+                    <h5 class="text-primary mb-4">SUPPORT</h5>
                     <ul>
                         <li><a href="#"class="style">CONTACT SUPPORT</a></li>
                         <li class="my-4 style"><a href="#">FAQS</a></li>
@@ -213,7 +213,7 @@ specialists.</p>
                     </ul>
                 </div>
                   <div>
-                    <h5 class="text-[var(--color-primary)] mb-4">SOCIAL</h5>
+                    <h5 class="text-primary mb-4">SOCIAL</h5>
                     <ul class="row gap-4" >
                         <li><img src="./src/ICONS/SOCIAL1.svg"/></li>
                         <li><img src="./src/ICONS/SOCIAL2.svg"/></li>
