@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Departments | Appointments</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href=".\src\output.css" rel="stylesheet">
+</head>
+<body>
+      <header>
+        <div class="container mx-auto row justify-between py-4.5 px-8 relative" >
+            <div class="md:hidden">
+                <input type="checkbox" id="menu" class="hidden peer">
+             <div class="flex justify-between items-center p-4">
+                <label for="menu" class="cursor-pointer"><img src="./src/ICONS/Menu.svg" alt="menu"></label>
+             </div>
+             <div class="hidden peer-checked:flex bg-gray-100  absolute top-full left-8 flex flex-col px-4" >
+                <a href="./index.html" class="text-sm text-[var(--color-muted)] py-2">Home</a>
+                 <a href="./doctors.html" class="text-sm text-[var(--color-muted)] py-2">Doctors</a>
+                 <a href="./clinics.html" class="text-sm text-[var(--color-muted)] py-2">Clinics</a>
+                  <a href="./book.html" class="text-sm text-[var(--color-muted)] py-2">Book</a>
+                   <a href="./about.html" class="text-sm text-[var(--color-muted)] py-2">About</a>
+                   <a href="./contact.html" class="text-sm text-[var(--color-muted)] py-2">Contact</a>
+             </div>
+            </div>
+            <nav class="row justify-between gap-12">
+                <a href="./index.html" class="text-xl font-bold text-[var(--color-primary)]">MedPrecise</a>
+                <ul class="row justify-between gap-6 text-sm text-[var(--color-muted)] hidden  md:flex">
+                    <li>
+                        <a href="./index.html" class="nav-link ">Home</a>
+                    </li>
+                    <li>
+                        <a href="./doctors.html" class="nav-link">Doctors</a>
+                    </li>
+                    <li>
+                        <a href="./clinics.html" class="nav-link">Clinics</a>
+                    </li>
+                    <li>
+                        <a href="./book.html" class="nav-link">Book</a>
+                    </li>
+                    <li>
+                        <a href="./about.html" class="nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="icons">
+                <ul class="row justify-between gap-4">
+                    <li>
+                        <a href="#"><img src="./src/ICONS/search.svg"></a>
+                    </li>
+                    <li class="hidden md:block">
+                        <a href="./login.html"><img src="./src/ICONS/pro.svg"></a>
+                    </li>
+                    <li class="hidden md:block">
+                        <a href="#"><img src="./src/ICONS/not.svg"></a>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
+    </header>
+     <div class="grid grid-cols-1 lg:grid-cols-[256px_1fr] ">
+         
+        <aside class="hidden lg:flex bg-bg3  flex-col min-h-full relative">
+              <div class="py-6 px-8">
+        <a href="./index.html"> <h3 class="!font-bold">PATIENT PORTAL</h3></a>   
+            <p class="text-xs text-muted mt-1">CLINICAL ACCESS</p>
+        </div>
+        <div class="mt-4 py-4 flex flex-col gap-1 " >
+          <a href="./dashboard.html" class="row gap-3 pl-6 py-3 nav-link">
+            <img src="./src/ICONS/dash.svg"/>
+            <p class="text-[13px] font-medium  text-muted">Dashboard</p>
+        </a>
+        <div class="relative row gap-3 pl-6 py-3 nav-link bg-bg2">
+            <div class="absolute left-0 top-0 h-full w-1 bg-primary"></div>
+            <img src="./src/ICONS/Appointments active.svg"/>
+            <p class="text-[13px] font-medium  text-primary">Appointments</p>
+        </div>
+        <div class="row gap-3 pl-6 py-3 nav-link">
+            <img src="./src/ICONS/Medical Records.svg"/>
+            <p class="text-[13px] font-medium  text-muted">Medical Records</p>
+        </div>
+        <div class="row gap-3 pl-6 py-3 nav-link">
+            <img src="./src/ICONS/Billing.svg"/>
+            <p class="text-[13px] font-medium  text-muted">Billing</p>
+        </div>
+        <div class=" row gap-3 pl-6 py-3 nav-link ">
+            <img src="./src/ICONS/Settings.svg"/>
+            <p class="text-[13px] font-medium  text-muted">Settings</p>
+        </div>
+
+        <div class="absolute bottom-0 border-t border-border w-full">
+            <div class="row  gap-3 py-3 pl-6 nav-link">
+                <img src="./src/ICONS/SUPPORT.svg"/>
+                <a href="#" class="text-[13px] font-medium  text-muted tracking-[1.3px]">SUPPORT</a>
+            </div>
+            <div class="row  gap-3 py-3 pl-6 nav-link">
+                <img src="./src/ICONS/LOGOUT.svg"/>
+                <a href="./login.html" class="text-[13px] font-medium  text-muted tracking-[1.3px]">LOGOUT</a>
+            </div>
+
+        </div>
+        
+        </div>
+        
+        </aside>
+         <main class="py-10 px-16 mb-12">
+            <section class=" md:flex items-end justify-between mb-12" >
+                <div>
+                    <p class="text-[48px] font-bold text-primary">My Appointments</p>  
+              <p class="text-[15px] text-dark">Manage your clinical sessions and history.</p>
+                </div>
+                <div class="row gap-2">
+                    <a class="bg-bg2 rounded-md w-fit py-2 px-4 row gap-1">
+                        <img src="./src/ICONS/Past Visits.svg">
+                    <p class="text-[15px] font-semibold text-t2">Past Visits</p>
+                </a>
+                 <a href="./book.html" class="bg-primary rounded-md w-fit py-2 px-4 row gap-1">
+                        <img src="./src/ICONS/Book New.svg">
+                    <p class="text-[15px] font-semibold text-white">Book New</p>
+                </a>
+                </div>
+              
+            </section>
+            <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <div class="border border-border bg-bg3 p-6 rounded-md">
+                    <div class="row gap-4">
+                        <img src="./src/photos/app/julian.webp" class="rounded-md"/>
+                        <div class="flex  gap-1">
+                            <div>
+                            <h3>Dr. Julian Sterling</h3>
+                            <p class="text-[13px] font-medium text-dark">Cardiology • General Clinic</p>
+                        </div>
+                        <p class="text-[11px] text-white font-bold bg-available py-1 px-2 w-fit h-fit rounded-lg">CONFIRMED</p>
+                        </div>   
+                    </div>
+                    <div class="bg-bg2 rounded-md p-4 mt-4">
+                      <div class="row gap-2 mb-1">
+                        <img src="./src/ICONS/date.svg"/>
+                        <p class="text-primary text-[15px] font-semibold">October 24, 2024</p>
+                      </div>
+                       <div class="row gap-2">
+                        <img src="./src/ICONS/time1.svg"/>
+                        <p class="text-primary text-[15px] font-semibold">09:30 AM — 10:15 AM</p>
+                      </div>
+                    </div>
+                    <div class="w-full bg-border h-0.5 my-4"></div>
+                    <div class="row gap-2">
+                        <button class="w-full text-t2 bg-bg2 py-[12.5px] text-[15px] font-semibold rounded-md">Reschedule</button>
+                        <button class="p-2"><img src="./src/ICONS/cancel.svg" class="w-6 h-6"/></button>
+                    </div>
+                </div>
+                   <div class="border border-border bg-bg3 p-6 rounded-md">
+                    <div class="row gap-4">
+                        <img src="./src/photos/app/elena.webp" class="rounded-md"/>
+                        <div class="flex  gap-1">
+                            <div>
+                            <h3>Dr. Elena Rodriguez</h3>
+                            <p class="text-[13px] font-medium text-dark">Dermatology • Skin Care Unit</p>
+                        </div>
+                        <p class="text-[11px] text-white font-bold bg-unavailable py-1 px-2 w-fit h-fit rounded-lg">COMPLETED</p>
+                        </div>   
+                    </div>
+                    <div class="bg-bg2 rounded-md p-4 mt-4">
+                      <div class="row gap-2 mb-1">
+                        <img src="./src/ICONS/date.svg"/>
+                        <p class="text-primary text-[15px] font-semibold">October 12, 2024</p>
+                      </div>
+                       <div class="row gap-2">
+                        <img src="./src/ICONS/time1.svg"/>
+                        <p class="text-primary text-[15px] font-semibold">02:00 PM — 02:30 PM</p>
+                      </div>
+                    </div>
+                    <div class="w-full bg-border h-0.5 my-4"></div>
+                    <div class="row gap-2">
+                        <button class="w-full text-white bg-primary py-2 text-[15px] font-semibold rounded-md">View Summary</button>
+                        <button class="w-full text-t2 bg-bg2 py-2 text-[15px] font-semibold rounded-md">Rebook</button>
+                    </div>
+                </div>
+                 <div class="border border-border bg-bg3 p-6 rounded-md h-fit opacity-70">
+                    <div class="row gap-4">
+                       <div class="bg-bg2 px-1 py-3.5 rounded-xl"><img src="./src/ICONS/Medical Basics.svg" class="w-8"/></div>
+                        <div class="flex  gap-1">
+                            <div>
+                            <h3>Dr. Sarah Chen</h3>
+                            <p class="text-[13px] font-medium text-dark">Neurology • Neuro Center</p>
+                        </div>
+                        <p class="text-[11px] text-white font-bold bg-emergency py-1 px-2 w-fit h-fit rounded-lg">CANCELLED</p>
+                        </div>   
+                    </div>
+                    <div class="bg-bg2 rounded-md p-4 mt-4">
+                      <div class="row gap-2 mb-1">
+                        <img src="./src/ICONS/date.svg"/>
+                        <p class="text-primary text-[15px] font-semibold">October 05, 2024</p>
+                      </div>
+                       <p class="text-emergency text-xs font-medium">Cancelled by patient on Oct 03</p>
+                      
+                    </div>
+                    <div class="w-full bg-border h-0.5 my-4"></div>
+                     <button class="w-full text-t2 bg-bg2 py-2 text-[15px] font-semibold rounded-md">Find New Time</button>
+                </div>
+            </section>
+            <section class="py-16 flex flex-col justify-center items-center gap-6 max-w-[384px] mx-auto">
+             <div class="px-5 py-[18.5px] rounded-lg bg-bg3 w-fit"><img src="./src/ICONS/No appointments yet.svg"/></div>
+             <div class="text-center">
+                <p class="text-[24px] font-semibold text-primary">No appointments yet</p>
+             <p class="text-dark text-[15px]">You don't have any more upcoming clinical sessions scheduled for this month.</p>
+             </div>
+             <a href="./book.html" class="row gap-2 bg-primary py-[18.5px] px-12 w-fit rounded-lg"><img src="./src/ICONS/Book now.svg"/><p class="text-white text-[15px] font-semibold">Book now</p></a>
+            </section>
+            <nav class="fixed bottom-0 left-0 w-full bg-bg3/85 border-t border-border shadow-md  lg:hidden overflow-x-auto no-scrollbar">
+                <div class=" border-border pt-3 px-6  gap-16 flex justify-center min-w-max">
+                <a href="./dashboard.html" class="flex flex-col items-center gap-1 nav-link shrink-0">
+                    <img src="./src/ICONS/Dashboard.svg"/>
+                    <p class="text-[10px] font-bold text-muted">HOME</p>
+                </a>
+                <a href="./Appointments.html" class="flex flex-col items-center gap-1 nav-link shrink-0">
+                    <img src="./src/ICONS/Appointments.svg"/>
+                    <p class="text-[10px] font-bold text-muted">BOOK</p>
+                </a>
+               
+                <a class="flex flex-col items-center gap-1 nav-link shrink-0">
+                    <img src="./src/ICONS/Medical Records.svg"/>
+                    <p class="text-[10px] font-bold text-muted">RECORDS</p>
+                </a>
+                <a href="./profile.html" class="flex flex-col items-center gap-1 nav-link shrink-0">
+                    <img src="./src/ICONS/pro.svg"/>
+                    <p class="text-[10px] font-bold text-primary">PROFILE</p>
+                </a>
+                 <a href="./login.html" class="flex flex-col items-center gap-1 nav-link shrink-0">
+                    <img src="./src/ICONS/LOGOUT.svg"/>
+                    <p class="text-[10px] font-bold text-muted">LOGOUT</p>
+                 </a>
+
+               </div>
+          </nav>  
+        </main>
+
+    
+    </div>
+  
+</body>
+</html>

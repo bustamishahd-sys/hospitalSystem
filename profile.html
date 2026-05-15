@@ -66,21 +66,21 @@
 
         </div>
     </header>
-    <div class="grid grid-cols-1 md:grid-cols-[256px_1fr] ">
+    <div class="grid grid-cols-1 lg:grid-cols-[256px_1fr] ">
          
-        <aside class="hidden md:flex bg-bg3  flex-col min-h-full relative">
+        <aside class="hidden lg:flex bg-bg3  flex-col min-h-full relative">
               <div class="py-6 px-8">
         <a href="./index.html"> <h3 class="!font-bold">PATIENT PORTAL</h3></a>   
             <p class="text-xs text-muted mt-1">CLINICAL ACCESS</p>
         </div>
         <div class="mt-4 py-4 flex flex-col gap-1 " >
           <a href="./dashboard.html" class="row gap-3 pl-6 py-3 nav-link">
-            <img src="./src/ICONS/Dashboard.svg"/>
-            <p class="text-[13px] font-medium  text-primary">Dashboard</p>
+            <img src="./src/ICONS/dash.svg"/>
+            <p class="text-[13px] font-medium  text-muted">Dashboard</p>
         </a>
         <div class="row gap-3 pl-6 py-3 nav-link">
             <img src="./src/ICONS/Appointments.svg"/>
-            <p class="text-[13px] font-medium  text-muted">Appointments</p>
+            <a href="./Appointments.html" class="text-[13px] font-medium  text-muted">Appointments</a>
         </div>
         <div class="row gap-3 pl-6 py-3 nav-link">
             <img src="./src/ICONS/Medical Records.svg"/>
@@ -93,7 +93,7 @@
         <div class="relative row gap-3 pl-6 py-3 nav-link bg-bg2">
             <div class="absolute left-0 top-0 h-full w-1 bg-primary"></div>
 
-            <img src="./src/ICONS/Settings.svg"/>
+            <img src="./src/ICONS/Settings active.svg"/>
             <p class="text-[13px] font-medium  text-primary">Settings</p>
         </div>
 
@@ -250,24 +250,28 @@
             </div>
             
            </div>
-          <nav class="fixed bottom-0 left-0 w-full bg-bg3/85 border-t border-border shadow-md px-6 md:hidden">
-                <div class=" border-border pt-3 row gap-16 ">
-                <a href="./dashboard.html" class="flex flex-col items-center gap-1 nav-link">
+          <nav class="fixed bottom-0 left-0 w-full bg-bg3/85 border-t border-border shadow-md  lg:hidden overflow-x-auto no-scrollbar">
+                <div class=" border-border pt-3 px-6 gap-16 flex justify-center min-w-max">
+                <a href="./dashboard.html" class="flex flex-col items-center gap-1 nav-link shrink-0">
                     <img src="./src/ICONS/Dashboard.svg"/>
                     <p class="text-[10px] font-bold text-muted">HOME</p>
                 </a>
-                <a class="flex flex-col items-center gap-1 nav-link">
+                <a href="./Appointments.html" class="flex flex-col items-center gap-1 nav-link shrink-0">
                     <img src="./src/ICONS/Appointments.svg"/>
                     <p class="text-[10px] font-bold text-muted">BOOK</p>
                 </a>
                
-                <a class="flex flex-col items-center gap-1 nav-link">
+                <a class="flex flex-col items-center gap-1 nav-link shrink-0">
                     <img src="./src/ICONS/Medical Records.svg"/>
                     <p class="text-[10px] font-bold text-muted">RECORDS</p>
                 </a>
-                <a href="./profile.html" class="flex flex-col items-center gap-1 nav-link">
+                <a href="./profile.html" class="flex flex-col items-center gap-1 nav-link shrink-0">
                     <img src="./src/ICONS/pro.svg"/>
                     <p class="text-[10px] font-bold text-primary">PROFILE</p>
+                </a>
+                 <a href="./login.html" class="flex flex-col items-center gap-1 nav-link shrink-0">
+                    <img src="./src/ICONS/LOGOUT.svg"/>
+                    <p class="text-[10px] font-bold text-muted">LOGOUT</p>
                 </a>
 
                </div>
