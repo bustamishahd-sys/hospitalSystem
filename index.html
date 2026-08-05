@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +7,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  <link href=".\src\output.css" rel="stylesheet">
+  <link href="./src/output.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="bg-background">
         <div class="container mx-auto row justify-between py-4.5 px-8 relative" >
-            <div class="md:hidden">
-                <input type="checkbox" id="menu" class="hidden peer">
-             <div class="flex justify-between items-center p-4">
-                <label for="menu" class="cursor-pointer"><img src="./src/ICONS/Menu.svg" alt="menu"></label>
-             </div>
-             <div class="hidden peer-checked:flex bg-gray-100  absolute top-full left-8 flex flex-col px-4" >
+            <div class="relative md:hidden">
+                <button data-menu-toggle class="menu transition-all duration-75 active:scale-90" id="menu-toggle">
+              <img src="./src/ICONS/menu.svg" alt="Menu Icon">
+                </button>
+             <nav data-mobile-menu class="absolute lg:hidden bg-gray-100 left-8 flex flex-col px-4 hidden">
                 <a href="./index.html" class="text-sm text-muted py-2">Home</a>
                  <a href="./doctors.html" class="text-sm text-muted py-2">Doctors</a>
                  <a href="./clinics.html" class="text-sm text-muted py-2">Clinics</a>
                   <a href="./book.html" class="text-sm text-muted py-2">Book</a>
                    <a href="./about.html" class="text-sm text-muted py-2">About</a>
                    <a href="./contact.html" class="text-sm text-muted py-2">Contact</a>
-             </div>
+             </nav>
             </div>
             <nav class="row justify-between gap-12">
                 <a href="./index.html" class="text-xl font-bold text-primary">MedPrecise</a>
@@ -49,8 +48,14 @@
                     </li>
                 </ul>
             </nav>
+        
             <nav class="icons">
                 <ul class="row justify-between gap-4">
+                    <li>
+                        <button id="theme-toggle" class=" hover:bg-gray-400 transform-fill duration-300 bg-gray-100 rounded-xl p-2"> 
+             light/dark
+            </button>
+                    </li>
                     <li class="hidden md:block nav-link">
                         <a href="#"><img src="./src/ICONS/search.svg"></a>
                     </li>
@@ -66,7 +71,7 @@
 
         </div>
     </header>
-    <main>
+    <main class="bg-background">
         <section class="hero min-h-screen px-8 flex items-center justify-center ">
             <div class="container mx-auto flex-col  md:flex md:flex-row md:justify-between h-full items-center gap-12 py-16">
                  <div class="flex-1">
@@ -298,7 +303,7 @@
                     </ul>
                 </div>
                 <div class="min-w-0">
-                    <h5 class="text-muted mb-4"">CONTACT</h5>
+                    <h5 class="text-muted mb-4">CONTACT</h5>
                     <ul>
                         <li class="text-muted">123 Medical Plaza, Health City</li>
                         <li class="my-4 text-muted break-words">contact@medprecise.com</li>
@@ -316,6 +321,6 @@
         </div>
         </section>
     </footer>
-    
+    <script src="./main.js"></script>
 </body>
 </html>

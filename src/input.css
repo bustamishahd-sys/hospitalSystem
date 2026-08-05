@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 
 @theme{
@@ -22,6 +23,15 @@
     --color-emergency:#BA1A1A;
     --color-emtext:#93000A;
     --font-inter:'Inter';
+
+}
+.dark{
+--color-background:#1B1C1D ;
+    --color-primary:#FFFFFF ;
+    --color-muted:#ffffff ;
+    --color-highlight:#ffffff ;
+    --color-bg2:#1B1C1D ;
+    --color-bg3:#1B1C1D ;
 
 }
 
