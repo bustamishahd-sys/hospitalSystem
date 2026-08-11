@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <link href="./src/output.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-background">
     <header class="navbar py-4.5 px-8 2xl:px-0 bg-red relative">
  <div class="container mx-auto row justify-between">
          <div class="relative md:hidden">
@@ -51,6 +51,11 @@
             </nav>
             <nav class="icons">
                 <ul class="row justify-between gap-4">
+                    <li>
+                        <button id="theme-toggle" class=" hover:bg-gray-400 transform-fill duration-300 bg-gray-100 rounded-xl p-2"> 
+             light/dark
+            </button>
+                    </li>
                     <li class="nav-link">
                         <a href="./login.html"><img src="./src/ICONS/pro.svg"></a>
                     </li>
